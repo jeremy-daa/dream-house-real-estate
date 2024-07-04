@@ -17,7 +17,7 @@ const HomeHero = () => {
         className="absolute top-0 left-0 w-full h-full bg-opacity-30"
         style={{
           background: "var(--theme-blue)",
-          opacity: 0.5,
+          opacity: 0.6,
         }}
       ></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[100px]">

@@ -9,7 +9,7 @@ const NavBar = () => {
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setStyle({
-        backgroundColor: "var(--blue-transparent)",
+        backgroundColor: "var(--theme-blue)",
         boxShadow: "0px 0px 10px rgba(0,0,0,0.1)",
       });
     } else {
@@ -21,11 +21,11 @@ const NavBar = () => {
   }
   return (
     <nav
-      className="h-24 w-full  fixed top-0 left-0 duration-300 select-none z-50 bg-[var(--theme-blue)]"
-      //   style={style}
+      className="h-24 w-full  fixed top-0 left-0 duration-300 select-none z-50"
+      style={style}
     >
       <div className="w-full flex justify-between items-center px-24 relative">
-        <div className="absolute -bottom-2 left-0 w-full h-5 bottomFade"></div>
+        {/* <div className="absolute -bottom-[7px] left-0 w-full h-5 bottomFade"></div> */}
         <Link className="flex gap-2 items-center" href={"/"}>
           <Image
             src="/logo.svg"
