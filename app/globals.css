@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --theme-blue: #00101F;
+  --theme-blue: #00101f;
   --theme-red: #AD001D;
+  --blue-transparent: #00101fa3;
+  --bg: #0D151E;
 }
 
 .active {
@@ -23,6 +25,20 @@
   background-color: var(--theme-red);
 }
 
+.floatingAction {
+  @apply w-[3.5rem] h-[3.5rem] rounded-[50%] cursor-pointer border-[2px] text-slate-200 duration-300;
+
+}
+
+.bottomFade {
+  background: rgb(0, 16, 31);
+  background: linear-gradient(180deg, var(--theme-blue) 0%, var(--bg) 100%);
+}
+
+.floatingAction:hover {
+  animation: shake 0.5s infinite;
+}
+
 @keyframes activeUnderline {
   0% {
     width: 0;
@@ -30,5 +46,27 @@
 
   100% {
     width: 100%;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
   }
 }
