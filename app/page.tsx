@@ -11,7 +11,7 @@ export default function Home() {
       <HomeInfo />
       <OurStory />
       <HomeProperties />
-      {/* <LocationInfo /> */}
+      <LocationInfo />
     </div>
   );
 }

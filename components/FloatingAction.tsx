@@ -7,13 +7,13 @@ const FloatingAction = () => {
   return (
     <div className="fixed bottom-[3rem] right-[2rem] z-50 flex flex-col justify-center items-center gap-6 duration-300 ">
       <Link
-        className="floatingAction p-3 bg-[var(--theme-blue)] border-[var(--theme-red)] hover:text-[var(--theme-red)]"
+        className="floatingAction p-3 bg-[var(--theme-blue)] border-[var(--theme-red)] hover:text-[var(--theme-red)] glow"
         href="/"
       >
         <BsTelephone className={"w-full h-full"} />
       </Link>
       <Link
-        className="floatingAction p-2 bg-[var(--theme-red)] border-[var(--theme-blue)] hover:text-[var(--theme-blue)]"
+        className="floatingAction p-2 bg-[var(--theme-red)] border-[var(--theme-blue)] hover:text-[var(--theme-blue)] glow"
         href="/"
       >
         <BiLogoWhatsapp className={"w-full h-full"} />
