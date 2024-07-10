@@ -37,7 +37,7 @@ const OurStory = () => {
         </p>
         <Link
           href="/portfolio"
-          className="px-8 py-3 text-lg bg-[var(--theme-red)] text-slate-100 rounded-sm border-2 border-[var(--theme-blue)] hover:text-[var(--theme-red)] hover:bg-[var(--card-blue)] hover:border-[var(--theme-red)] duration-500 w-fit"
+          className="px-8 py-3 text-lg bg-[var(--theme-red)] text-slate-100 rounded-sm border-2 border-[var(--theme-blue)] hover:text-[var(--theme-red)] hover:bg-[var(--card-blue)] hover:border-[var(--theme-red)] duration-500 w-fit glow"
         >
           Explore Our Portfolio
         </Link>

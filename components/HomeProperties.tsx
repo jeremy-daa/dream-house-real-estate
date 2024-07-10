@@ -173,7 +173,7 @@ const HomeProperties = () => {
           <Link
             href={"/properties"}
             className="text-lg text-[var(--theme-red)] font-semibold px-8 py-3 border-[var(--theme-red)] border-[2px]
-              hover:bg-[var(--theme-red)] hover:text-slate-100 rounded-sm duration-300"
+              hover:bg-[var(--theme-red)] hover:text-slate-100 rounded-sm duration-300 glow"
           >
             View More Properties
           </Link>

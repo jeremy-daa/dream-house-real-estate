@@ -73,7 +73,7 @@ const NavBar = () => {
           </ul>
         </div>
         <Link href={"#"}>
-          <button className="px-6 py-2  text-[var(--theme-red)] rounded-sm border-2 border-[var(--theme-red)] hover:text-[var(--theme-blue)] hover:bg-[var(--theme-red)] hover:border-[var(--theme-red)] duration-500 ">
+          <button className="px-6 py-2  text-[var(--theme-red)] rounded-sm border-2 border-[var(--theme-red)] hover:text-[var(--theme-blue)] hover:bg-[var(--theme-red)] hover:border-[var(--theme-red)] duration-500 glow">
             Book a Consultation
           </button>
         </Link>

@@ -23,13 +23,13 @@ const Footer = () => {
         </p>
         <Link
           href="/contact"
-          className="px-8 py-3 text-lg bg-[var(--theme-red)] text-slate-100 rounded-sm border-2 border-[var(--theme-blue)] hover:bg-[var(--theme-blue)] hover:border-[var(--theme-red)] duration-500 w-fit"
+          className="px-8 py-3 text-lg bg-[var(--theme-red)] text-slate-100 rounded-sm border-2 border-[var(--theme-blue)] hover:bg-[var(--theme-blue)] hover:border-[var(--theme-red)] duration-500 w-fit glowBlue"
         >
           Contact Us
         </Link>
       </div>
 
-      <div className="text-slate-100 bg-[var(--theme-blue)] pt-64 px-[100px] pb-24 flex justify-between gap-10 items-start">
+      <div className="text-slate-100 bg-[var(--card-blue)] pt-64 px-[100px] pb-24 flex justify-between gap-10 items-start">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2 items-center">
             <Image
@@ -51,25 +51,25 @@ const Footer = () => {
           <div className="flex gap-4 items-center">
             <Link
               href={"/facebook.com"}
-              className="p-3 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit border-2 border-transparent hover:bg-[--theme-blue] hover:border-[var(--theme-red)] duration-300"
+              className="p-3 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit border-2 border-transparent hover:bg-[--theme-blue] hover:border-[var(--theme-red)] duration-300 scale-90 glow"
             >
               <FaFacebookF className="text-2xl" />
             </Link>
             <Link
               href={"/whatsapp.com"}
-              className="p-2 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit border-2 border-transparent hover:bg-[--theme-blue] hover:border-[var(--theme-red)] duration-300"
+              className="p-2 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit border-2 border-transparent hover:bg-[--theme-blue] hover:border-[var(--theme-red)] duration-300 scale-90 glow"
             >
               <IoLogoWhatsapp className="text-3xl" />
             </Link>
             <Link
               href={"/instagram.com"}
-              className="p-3 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit border-2 border-transparent hover:bg-[--theme-blue] hover:border-[var(--theme-red)] duration-300"
+              className="p-3 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit border-2 border-transparent hover:bg-[--theme-blue] hover:border-[var(--theme-red)] duration-300 scale-90 glow"
             >
               <BsInstagram className="text-2xl" />
             </Link>
             <Link
               href={"/facebook.com"}
-              className="p-3 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit border-2 border-transparent hover:bg-[--theme-blue] hover:border-[var(--theme-red)] duration-300"
+              className="p-3 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit border-2 border-transparent hover:bg-[--theme-blue] hover:border-[var(--theme-red)] duration-300 scale-90 glow"
             >
               <IoLogoTiktok className="text-2xl" />
             </Link>
