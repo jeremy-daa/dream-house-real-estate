@@ -26,7 +26,7 @@ const HomeHero = () => {
             Dream House Real Estate
           </p>
           <h1 className="text-5xl mb-4 leading-snug">
-            Your Trusted Partner in Finding Perfect Homes in Addis Ababa
+            Your Trusted Partner in Developing Perfect Homes in Addis Ababa
           </h1>
           <Link
             href="/properties"

@@ -9,7 +9,7 @@ const NavBar = () => {
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setStyle({
-        backgroundColor: "var(--theme-blue)",
+        backgroundColor: "var(--card-blue)",
         boxShadow: "0px 0px 10px rgba(0,0,0,0.1)",
       });
     } else {

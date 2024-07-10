@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={poppinsNormal.className}>
         <NavBar />
 
-        <main className="min-h-[200vh]">{children}</main>
+        <main className="">{children}</main>
         <FloatingAction />
         <Footer />
       </body>
