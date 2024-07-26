@@ -7,8 +7,6 @@ import {
   IoLogoWhatsapp,
 } from "react-icons/io5";
 import { MdOutlineMail, MdOutlinePhone } from "react-icons/md";
-import { ImFacebook } from "react-icons/im";
-import { SiFacebook } from "react-icons/si";
 import { FaFacebookF } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 

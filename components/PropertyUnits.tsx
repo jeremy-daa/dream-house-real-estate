@@ -1,22 +1,19 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { LiaBedSolid } from "react-icons/lia";
-import { PiBathtub } from "react-icons/pi";
 import { MdSquareFoot } from "react-icons/md";
+import { PiBathtub } from "react-icons/pi";
+import Image from "next/image";
 import { FiMapPin } from "react-icons/fi";
 
-const HomeProperties = () => {
+const PropertyUnits = () => {
   return (
     <div className="mt-24 px-32">
       <div className="flex flex-col gap-10 items-center">
         <h2 className="text-6xl text-[var(--theme-blue)] font-semibold text-center">
-          Our Properties
+          Our Property Units
         </h2>
-        <p className="text-center text-lg text-slate-500 max-w-xl">
-          We offer a wide range of properties options to suit your needs. Here
-          are some of our featured properties.
-        </p>
+        <p className="text-center text-lg text-slate-500 max-w-xl"></p>
         <div className="flex justify-between gap-10">
           <div className="w-[450px] flex flex-col p-3 pb-5 rounded-sm border-[var(--theme-red)] border-[3px] gap-8 hover:-translate-y-2 hover:shadow-xl duration-300">
             <div className="w-full h-[200px] rounded-sm overflow-hidden relative border-[var(--theme-red)] border-[3px]">
@@ -39,7 +36,7 @@ const HomeProperties = () => {
                 <Link
                   href={"/properties"}
                   className="text-sm text-[var(--theme-red)] font-semibold px-3 py-1 border-[var(--theme-red)] border-[2px]
-                    hover:bg-[var(--theme-red)] hover:text-slate-100 rounded-sm duration-300"
+                hover:bg-[var(--theme-red)] hover:text-slate-100 rounded-sm duration-300"
                 >
                   View Details
                 </Link>
@@ -89,7 +86,7 @@ const HomeProperties = () => {
                 <Link
                   href={"/properties"}
                   className="text-sm text-[var(--theme-red)] font-semibold px-3 py-1 border-[var(--theme-red)] border-[2px]
-                    hover:bg-[var(--theme-red)] hover:text-slate-100 rounded-sm duration-300"
+                hover:bg-[var(--theme-red)] hover:text-slate-100 rounded-sm duration-300"
                 >
                   View Details
                 </Link>
@@ -119,18 +116,9 @@ const HomeProperties = () => {
             </div>
           </div>
         </div>
-        <div className="mt-5">
-          <Link
-            href={"/properties"}
-            className="text-lg text-[var(--theme-red)] font-semibold px-8 py-3 border-[var(--theme-red)] border-[2px]
-              hover:bg-[var(--theme-red)] hover:text-slate-100 rounded-sm duration-300 glow"
-          >
-            View More Properties
-          </Link>
-        </div>
       </div>
     </div>
   );
 };
 
-export default HomeProperties;
+export default PropertyUnits;

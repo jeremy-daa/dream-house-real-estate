@@ -3,9 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import NavLink from "./NavLink";
+import BookConsultation from "./BookConsultation";
 
 const NavBar = () => {
   const [style, setStyle] = useState({});
+  const [consultationModal, setConsultationModal] = useState(false);
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setStyle({
@@ -19,12 +21,17 @@ const NavBar = () => {
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", handleScroll);
   }
+
   return (
     <nav
-      className="h-24 w-full  fixed top-0 left-0 duration-300 select-none z-50"
+      className="h-24 w-full fixed top-0 left-0 duration-300 select-none z-50"
       style={style}
     >
       <div className="w-full flex justify-between items-center px-24 relative">
+        <BookConsultation
+          consultationModal={consultationModal}
+          setConsultationModal={setConsultationModal}
+        />
         {/* <div className="absolute -bottom-[7px] left-0 w-full h-5 bottomFade"></div> */}
         <Link className="flex gap-2 items-center" href={"/"}>
           <Image
@@ -51,7 +58,7 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink href="#" className="">
+              <NavLink href="/gallery" className="">
                 Gallery
               </NavLink>
             </li>
@@ -66,17 +73,18 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink href="#" className="">
+              <NavLink href="/contact" className="">
                 Contact
               </NavLink>
             </li>
           </ul>
         </div>
-        <Link href={"#"}>
-          <button className="px-6 py-2  text-[var(--theme-red)] rounded-sm border-2 border-[var(--theme-red)] hover:text-[var(--theme-blue)] hover:bg-[var(--theme-red)] hover:border-[var(--theme-red)] duration-500 glow">
-            Book a Consultation
-          </button>
-        </Link>
+        <button
+          className="px-6 py-2  text-[var(--theme-red)] rounded-sm border-2 border-[var(--theme-red)] hover:text-[var(--theme-blue)] hover:bg-[var(--theme-red)] hover:border-[var(--theme-red)] duration-500 glow"
+          onClick={() => setConsultationModal(true)}
+        >
+          Book a Consultation
+        </button>
       </div>
     </nav>
   );

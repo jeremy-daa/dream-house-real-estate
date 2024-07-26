@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import FloatingAction from "@/components/FloatingAction";
