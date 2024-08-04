@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavLink from "./NavLink";
 import BookConsultation from "./BookConsultation";
 
@@ -13,18 +13,26 @@ const NavBar = () => {
       setStyle({
         backgroundColor: "var(--card-blue)",
         boxShadow: "0px 0px 10px rgba(0,0,0,0.1)",
+        zIndex: 30,
       });
     } else {
-      setStyle({});
+      setStyle({
+        zIndex: 30,
+      });
     }
   };
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", handleScroll);
-  }
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+    }
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav
-      className="h-24 w-full fixed top-0 left-0 duration-300 select-none z-50"
+      className="h-24 w-full fixed top-0 left-0 duration-300 select-none z-30"
       style={style}
     >
       <div className="w-full flex justify-between items-center px-24 relative">
@@ -63,12 +71,12 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink href="#" className="">
+              <NavLink href="/portfolio" className="">
                 Portfolio
               </NavLink>
             </li>
             <li>
-              <NavLink href="#" className="">
+              <NavLink href="/updates" className="">
                 Updates
               </NavLink>
             </li>

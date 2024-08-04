@@ -54,19 +54,21 @@ const Footer = () => {
               <FaFacebookF className="text-2xl" />
             </Link>
             <Link
-              href={"/whatsapp.com"}
+              href={"https://wa.me/+251963575700"}
               className="p-2 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit border-2 border-transparent hover:bg-[--theme-blue] hover:border-[var(--theme-red)] duration-300 scale-90 glow"
             >
               <IoLogoWhatsapp className="text-3xl" />
             </Link>
             <Link
-              href={"/instagram.com"}
+              href={
+                "https://www.instagram.com/dreamhouse_et?igsh=ZHpxYjZmcXR6Z2dw"
+              }
               className="p-3 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit border-2 border-transparent hover:bg-[--theme-blue] hover:border-[var(--theme-red)] duration-300 scale-90 glow"
             >
               <BsInstagram className="text-2xl" />
             </Link>
             <Link
-              href={"/facebook.com"}
+              href={"https://www.tiktok.com/@dreamhouse_et?_t=8nytJDsa1sE&_r=1"}
               className="p-3 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit border-2 border-transparent hover:bg-[--theme-blue] hover:border-[var(--theme-red)] duration-300 scale-90 glow"
             >
               <IoLogoTiktok className="text-2xl" />
@@ -96,48 +98,54 @@ const Footer = () => {
             Contact Us
           </Link>
           <Link
-            href="/services"
+            href="/portfolio"
             className="duration-300 hover:text-[var(--theme-red)]"
           >
-            Services
+            Portfolio
           </Link>
         </div>
         <div className="flex flex-col gap-5 text-slate-400">
           <h3 className="font-semibold text-lg mb-4 text-slate-100">
             Contact Info
           </h3>
-          <p className="flex items-center gap-2">
+          <Link
+            href={"https://maps.app.goo.gl/DvxKongncwBCV6xR9"}
+            className="flex items-center gap-2"
+          >
             <span className="p-2 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit">
               <IoLocationOutline className="text-xl" />
             </span>
             <span className="text-slate-400 tracking-widest hover:text-[var(--theme-red)] duration-300 cursor-pointer">
               Addis Ababa, Ethiopia
             </span>
-          </p>
-          <p className="flex items-center gap-2">
+          </Link>
+          <Link href="tel:+251962944444" className="flex items-center gap-2">
             <span className="p-2 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit">
               <MdOutlinePhone className="text-xl" />
             </span>
             <span className="text-slate-400 tracking-widest hover:text-[var(--theme-red)] duration-300 cursor-pointer">
-              +251 911 111 111
+              +251 962 944444
             </span>
-          </p>
-          <p className="flex items-center gap-2">
+          </Link>
+          <Link href="tel:+251935575700" className="flex items-center gap-2">
             <span className="p-2 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit">
               <MdOutlinePhone className="text-xl" />
             </span>
             <span className="text-slate-400 tracking-widest hover:text-[var(--theme-red)] duration-300 cursor-pointer">
-              +251 911 111 111
+              +251 935 575700
             </span>
-          </p>
-          <p className="flex items-center gap-2">
+          </Link>
+          <Link
+            href="mailto:info@dreamhouse-et.com"
+            className="flex items-center gap-2"
+          >
             <span className="p-2 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit">
               <MdOutlineMail className="text-xl" />
             </span>
             <span className="text-slate-400 tracking-widest hover:text-[var(--theme-red)] duration-300 cursor-pointer">
-              abc@gmail.com
+              info@dreamhouse-et.com
             </span>
-          </p>
+          </Link>
         </div>
 
         <div className="flex flex-col gap-5 text-slate-400 max-w-72">

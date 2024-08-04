@@ -11,7 +11,7 @@ const PropertIntro = () => {
     <div className="mt-24 px-32 flex gap-24 justify-start">
       <div className="min-w-[450px] h-[600px] max-w-[450px]  border-[var(--theme-red)] border-[4px]">
         <Image
-          src={"/stock/9.jpg"}
+          src={"/design/building/1.jpg"}
           alt="our story"
           width={1000}
           height={1000}
@@ -43,9 +43,8 @@ const PropertIntro = () => {
               <MdOutlineRealEstateAgent className="text-2xl text-slate-50" />
             </span>
             <span className="text-[var(--theme-red)] text-3xl">2</span>
-            <span className="text-xl text-slate-500 font-semibold">
+            <span className="text-xl text-slate-500 font-semibold text-center">
               Floor
-              <br />
               <br />
               Basement
             </span>

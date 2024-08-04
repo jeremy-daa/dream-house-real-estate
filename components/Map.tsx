@@ -3,8 +3,8 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Map = () => {
   return (
-    <div>
-      <h2 className="text-5xl text-[var(--theme-red)] font-semibold text-center mb-8 flex justify-center items-center gap-4 mt-24">
+    <div className="mt-16">
+      <h2 className="text-5xl text-[var(--theme-red)] font-semibold text-center mb-8 flex justify-center items-center gap-4">
         <FaLocationDot />
         Our Property Location
       </h2>

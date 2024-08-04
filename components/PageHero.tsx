@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const PageHero = ({ title, img }: { title: string; img?: string }) => {
   return (
-    <div className="w-full py-48 flex justify-center items-center relative bg-[var(--theme-blue)] ">
+    <div className="w-full py-40 flex justify-center items-center relative bg-[var(--theme-blue)] ">
       <Image
         src={img || "/stock/12.jpg"}
         alt="hero"
@@ -22,7 +22,10 @@ const PageHero = ({ title, img }: { title: string; img?: string }) => {
           opacity: 0.6,
         }}
       ></div>
-      <h1 className="text-white text-6xl tracking-wider" style={{ zIndex: 1 }}>
+      <h1
+        className="text-white text-6xl tracking-wider leading-snug max-w-6xl text-center"
+        style={{ zIndex: 1 }}
+      >
         {title}
       </h1>
     </div>
