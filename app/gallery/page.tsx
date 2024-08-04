@@ -36,29 +36,33 @@ const page = () => {
       />
       <Br />
       <GallerySlider
-        title={"Amenities"}
+        title={"Floor Plans"}
         interval={4000}
-        subtitle={"Modern Amenities for Residents"}
+        subtitle={"Plans and Blue Prints"}
         slides={[
           {
-            image: "/design/building/7.jpg",
-            tag: "Building Design",
+            image: "/design/plans/1.jpg",
+            tag: "Basement -1 and -2 Floor Plan",
           },
           {
-            image: "/design/building/1.jpg",
-            tag: "Front, Day View",
+            image: "/design/plans/2.jpg",
+            tag: "Ground Floor Plan",
           },
           {
-            image: "/design/building/2.jpg",
-            tag: "Side, Night View",
+            image: "/design/plans/3.jpg",
+            tag: "Roof Terrace Floor Plan",
           },
           {
-            image: "/design/building/3.jpg",
-            tag: "Side, Day View",
+            image: "/design/plans/4.jpg",
+            tag: "3rd and Odd Floor Plan",
           },
           {
-            image: "/design/building/6.jpg",
-            tag: "Front, Night View",
+            image: "/design/plans/5.jpg",
+            tag: "First Floor Plan",
+          },
+          {
+            image: "/design/plans/6.jpg",
+            tag: "Building Plan",
           },
         ]}
       />

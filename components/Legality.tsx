@@ -14,20 +14,21 @@ const Legality = () => {
         interval={3500}
         slides={[
           {
-            image: "/stock/1.jpg",
-            tag: "Business License",
+            image: "/legality/5.jpg",
+            tag: "Landholding Certificate",
+          },
+
+          {
+            image: "/legality/2.jpg",
+            tag: "Parcel Coordinates",
           },
           {
-            image: "/stock/2.jpg",
-            tag: "Insurance",
+            image: "/legality/3.jpg",
+            tag: "Construction Permit",
           },
           {
-            image: "/stock/3.jpg",
-            tag: "Certifications",
-          },
-          {
-            image: "/stock/4.jpg",
-            tag: "Permits",
+            image: "/legality/4.jpg",
+            tag: "Construction Permit",
           },
         ]}
       />

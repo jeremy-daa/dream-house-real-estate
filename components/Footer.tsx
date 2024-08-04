@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
@@ -9,8 +10,17 @@ import {
 import { MdOutlineMail, MdOutlinePhone } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
+import { toast } from "react-toastify";
 
 const Footer = () => {
+  const [email, setEmail] = React.useState("");
+  const handleSubscribe = (e: any) => {
+    if (email) {
+      e.preventDefault();
+      toast("Subscribed!");
+    }
+    toast("Email Required!");
+  };
   return (
     <div className="flex flex-col">
       <div className="mx-[100px] bg-[var(--theme-red)] py-10 text-slate-100 flex flex-col gap-8 items-center rounded-lg translate-y-1/2 border-4 border-[var(--theme-blue)]">
@@ -161,8 +171,15 @@ const Footer = () => {
               type="email"
               placeholder="Email Address"
               className="p-2 border-2 border-slate-300 rounded-sm focus:outline-none focus:border-[var(--theme-red)] duration-300"
+              required
+              onChange={(e) => setEmail(e.target.value)}
             />
-            <button className="bg-[var(--theme-red)] text-slate-100 p-2 rounded-sm hover:bg-[var(--theme-blue)] duration-300 border-2 border-transparent hover:border-[var(--theme-red)]">
+            <button
+              className="bg-[var(--theme-red)] text-slate-100 p-2 rounded-sm hover:bg-[var(--theme-blue)] duration-300 border-2 border-transparent hover:border-[var(--theme-red)]"
+              onClick={(e) => {
+                handleSubscribe(e);
+              }}
+            >
               Subscribe
             </button>
           </form>
