@@ -2,8 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAuthSession } from "@/lib/authOptions";
 import Post from "@/models/Post";
 import dbConnect from "@/utils/dbConnect";
-import { defaultImage } from "../route";
 import { generateSlug } from "@/utils/functions";
+import { defaultImage } from "@/components/Exports";
 
 export async function GET(
   req: NextRequest,

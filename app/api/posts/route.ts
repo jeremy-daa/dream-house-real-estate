@@ -3,8 +3,8 @@ import { getAuthSession } from "@/lib/authOptions";
 import Post from "@/models/Post";
 import dbConnect from "@/utils/dbConnect";
 import { generateSlug } from "@/utils/functions";
+import { defaultImage } from "@/components/Exports";
 
-export const defaultImage = "/stock/1.jpg";
 export async function POST(request: Request) {
   const session = await getAuthSession();
   const body = await request.json();
