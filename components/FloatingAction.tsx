@@ -9,7 +9,7 @@ const FloatingAction = () => {
     <div className="fixed bottom-[3rem] right-[2rem] z-50 flex flex-col justify-center items-center gap-6 duration-300 ">
       <Link
         className="floatingAction p-3 bg-[var(--card-blue)] border-[var(--theme-red)] hover:text-[var(--theme-red)] glowBlue text-slate-200"
-        href="tel:+251962944444"
+        href="tel:+251935575700"
       >
         <BsTelephone className={"w-full h-full"} />
       </Link>
@@ -21,7 +21,7 @@ const FloatingAction = () => {
       </Link>
       <Link
         className="floatingAction p-2 bg-[var(--theme-red)] border-[var(--card-blue)] hover:text-[var(--card-blue)] glow text-slate-200"
-        href="https://wa.me/+251963575700"
+        href="https://wa.me/+251935575700"
       >
         <BiLogoWhatsapp className={"w-full h-full"} />
       </Link>

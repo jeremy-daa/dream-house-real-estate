@@ -128,7 +128,7 @@ const ContactForm = () => {
             <FaFacebookF className="text-xl" />
           </Link>
           <Link
-            href={"https://wa.me/+251963575700"}
+            href={"https://wa.me/+251935575700"}
             className="p-2 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit border-2 border-transparent hover:bg-[--theme-blue] hover:border-[var(--theme-red)] duration-300 scale-90 glow"
           >
             <IoLogoWhatsapp className="text-xl" />
