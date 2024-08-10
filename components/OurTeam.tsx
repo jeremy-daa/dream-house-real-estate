@@ -18,7 +18,7 @@ const OurTeam = () => {
       <div className="flex w-full items-start justify-center gap-20 px-28 mt-5">
         <div className="border-2 border-[var(--theme-red)]">
           <Image
-            src="/team/1.jpg"
+            src="/team/1.png"
             alt="Tesfaye Derese"
             width={500}
             height={500}
