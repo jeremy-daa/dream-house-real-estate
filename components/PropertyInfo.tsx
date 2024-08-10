@@ -14,7 +14,7 @@ const PropertyInfo = () => {
         <div className="flex gap-14 justify-center w-full">
           <div className="card w-[350px] h-[210px] select-none">
             <div className="card-inner">
-              <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-blue)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
+              <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-color)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
                 <Image
                   src="/vectors/location.svg"
                   alt="ROI"
@@ -35,7 +35,7 @@ const PropertyInfo = () => {
           </div>
           <div className="card w-[350px] h-[210px] select-none">
             <div className="card-inner">
-              <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-blue)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
+              <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-color)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
                 <Image
                   src="/vectors/design.svg"
                   alt="Sophisticated Design"
@@ -57,7 +57,7 @@ const PropertyInfo = () => {
           </div>
           <div className="card w-[350px] h-[210px] select-none">
             <div className="card-inner">
-              <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-blue)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
+              <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-color)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
                 <Image
                   src="/vectors/amenities.svg"
                   alt="ROI"
@@ -82,7 +82,7 @@ const PropertyInfo = () => {
         <div className="flex gap-14 justify-center w-full">
           <div className="card w-[350px] h-[210px] select-none">
             <div className="card-inner">
-              <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-blue)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
+              <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-color)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
                 <Image
                   src="/vectors/security.svg"
                   alt="ROI"
@@ -103,7 +103,7 @@ const PropertyInfo = () => {
           </div>
           <div className="card w-[350px] h-[210px] select-none">
             <div className="card-inner">
-              <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-blue)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
+              <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-color)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
                 <Image
                   src="/vectors/kitchen.svg"
                   alt="ROI"
@@ -124,7 +124,7 @@ const PropertyInfo = () => {
           </div>
           <div className="card w-[350px] h-[210px] select-none">
             <div className="card-inner">
-              <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-blue)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
+              <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-color)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
                 <Image
                   src="/vectors/roi.svg"
                   alt="ROI"

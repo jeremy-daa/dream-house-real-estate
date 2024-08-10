@@ -7,11 +7,8 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="mt-36">
-      {/* <PageHero title="Properties" /> */}
-      <h1 className="text-6xl text-center text-[var(--theme-red)] font-semibold">
-        Properties
-      </h1>
+    <div>
+      <PageHero title="Our Properties" img="/page_hero.png" />
       <PropertyIntro />
       <PropertyInfo />
       <PropertyUnits />

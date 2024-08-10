@@ -6,7 +6,7 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <PageHero title="Gallery" img="/stock/12.jpg" />
+      <PageHero title="Gallery" img="/page_hero.png" />
       <GallerySlider
         title={"Building Design"}
         interval={4000}

@@ -66,7 +66,7 @@ const ContactForm = () => {
   };
   return (
     <div className="w-[80%] mx-auto mt-10 rounded-lg flex shadowContact p-4">
-      <div className="flex-[0.40] rounded-lg bg-[var(--card-blue)] p-8 text-slate-400 flex flex-col gap-16 relative overflow-hidden">
+      <div className="flex-[0.40] rounded-lg bg-[var(--card-color)] p-8 text-slate-400 flex flex-col gap-16 relative overflow-hidden">
         <div className="circleBG bottom-0 h-52 w-52 right-0 translate-x-1/3 translate-y-1/3 z-0">
           <div className="circleBG top-0 h-32 w-32 left-0 -translate-x-1/3 -translate-y-1/3 z-0"></div>
         </div>

@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const PageHero = ({ title, img }: { title: string; img?: string }) => {
   return (
-    <div className="w-full py-40 flex justify-center items-center relative bg-[var(--theme-blue)] ">
+    <div className="w-full py-52 flex justify-center items-center relative bg-[var(--theme-blue)] ">
       <Image
-        src={img || "/stock/12.jpg"}
+        src={img || "/page_hero.png"}
         alt="hero"
         width={1920}
         height={1280}
-        className="absolute top-0 left-0 w-full h-full object-cover grayscale object-"
+        className="absolute top-0 left-0 w-full h-full object-cover grayscale object-bottom"
         style={{
           zIndex: 0,
           filter: "brightness(0.8)",
@@ -23,7 +23,7 @@ const PageHero = ({ title, img }: { title: string; img?: string }) => {
         }}
       ></div>
       <h1
-        className="text-white text-6xl tracking-wider leading-snug max-w-6xl text-center"
+        className="text-[var(--theme-red)] text-6xl tracking-wider leading-snug max-w-6xl text-center"
         style={{ zIndex: 1 }}
       >
         {title}

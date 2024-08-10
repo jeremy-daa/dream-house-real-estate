@@ -37,7 +37,7 @@ const Footer = () => {
         </Link>
       </div>
 
-      <div className="text-slate-100 bg-[var(--card-blue)] pt-64 px-[100px] pb-24 flex justify-between gap-10 items-start">
+      <div className="text-slate-100 bg-[var(--card-color)] pt-64 px-[100px] pb-24 flex justify-between gap-10 items-start">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2 items-center">
             <Image
