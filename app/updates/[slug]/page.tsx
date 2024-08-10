@@ -1,5 +1,7 @@
 import CommentSection from "@/components/CommentSection";
 import PageHero from "@/components/PageHero";
+import Post from "@/models/Post";
+import dbConnect from "@/utils/dbConnect";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -12,18 +14,11 @@ interface Params {
 }
 
 const page = async ({ params: { slug } }: Params) => {
-  const res: any = await fetch(
-    `${process.env.NEXTAUTH_URL}/api/posts/${slug}`,
-    {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      cache: "no-cache",
-    }
-  ).then((res) => res.json());
-  const blog = res;
-  if (!blog) {
+  dbConnect();
+  const blog = await Post.findOne({
+    slug,
+  });
+  if (blog === null) {
     return notFound();
   }
   const { title, content, image, fileAttached, comments } = blog;
