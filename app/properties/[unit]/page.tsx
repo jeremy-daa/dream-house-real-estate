@@ -33,6 +33,10 @@ const page = ({ params: { unit } }: Params) => {
             tag: "Appartment Unit",
           },
           {
+            image: "/design/plans/2-bed.jpg",
+            tag: "Floor Plan",
+          },
+          {
             image: "/design/plans/4.jpg",
             tag: "Floor Plan",
           },
@@ -50,6 +54,10 @@ const page = ({ params: { unit } }: Params) => {
           {
             image: "/design/units/2.jpg",
             tag: "Appartment Unit",
+          },
+          {
+            image: "/design/plans/3-bed.jpg",
+            tag: "Floor Plan",
           },
           {
             image: "/design/plans/4.jpg",

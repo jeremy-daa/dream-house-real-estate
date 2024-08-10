@@ -18,12 +18,12 @@ const PageHero = ({ title, img }: { title: string; img?: string }) => {
       <div
         className="absolute top-0 left-0 w-full h-full bg-opacity-30"
         style={{
-          background: "var(--theme-blue)",
-          opacity: 0.6,
+          background: "var(--card-color)",
+          opacity: 0.1,
         }}
       ></div>
       <h1
-        className="text-[var(--theme-red)] text-6xl tracking-wider leading-snug max-w-6xl text-center"
+        className="text-[var(--card-color)] text-4xl tracking-wider leading-snug max-w-6xl text-center px-6 py-1 rounded-sm bg-[var(--theme-red)] select-none"
         style={{ zIndex: 1 }}
       >
         {title}

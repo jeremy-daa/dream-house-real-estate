@@ -34,6 +34,7 @@ const page = () => {
           },
         ]}
       />
+
       <Br />
       <div className="flex flex-col items-center w-full">
         <h2 className="uppercase text-xl text-[var(--theme-red)] font-semibold tracking-widest text-center">
@@ -43,7 +44,7 @@ const page = () => {
           A 3D Walkthrough of the Building
         </p>
         <video
-          src="/video/1.mp4"
+          src="/video/3.mp4"
           width="850"
           height="480"
           className="rounded-lg"
@@ -81,6 +82,14 @@ const page = () => {
           {
             image: "/design/plans/6.jpg",
             tag: "Building Plan",
+          },
+          {
+            image: "/design/plans/2-bed.jpg",
+            tag: "2 Bedroom Floor Plan",
+          },
+          {
+            image: "/design/plans/3-bed.jpg",
+            tag: "3 Bedroom Floor Plan",
           },
         ]}
       />
