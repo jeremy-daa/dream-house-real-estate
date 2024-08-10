@@ -11,7 +11,7 @@ const NavBar = () => {
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setStyle({
-        backgroundColor: "var(--card-blue)",
+        backgroundColor: "var(--nav-scroll)",
         boxShadow: "0px 0px 10px rgba(0,0,0,0.1)",
         zIndex: 30,
       });
@@ -41,15 +41,15 @@ const NavBar = () => {
           setConsultationModal={setConsultationModal}
         />
         {/* <div className="absolute -bottom-[7px] left-0 w-full h-5 bottomFade"></div> */}
-        <Link className="flex gap-2 items-center" href={"/"}>
+        <Link className="flex gap-4 items-center py-4" href={"/"}>
           <Image
             src="/logo.svg"
             alt="Dream House Real Estate"
             width={60}
             height={80}
-            className="w-auto h-[90px]"
+            className="w-auto h-[50px]"
           />
-          <h1 className="text-[var(--theme-red)] text-2xl uppercase tracking-widest">
+          <h1 className="text-[var(--card-blue)] text-2xl capitalize tracking-widest font-semibold">
             Dream House
           </h1>
         </Link>

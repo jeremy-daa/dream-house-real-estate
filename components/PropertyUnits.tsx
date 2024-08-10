@@ -5,6 +5,7 @@ import { MdSquareFoot } from "react-icons/md";
 import { PiBathtub } from "react-icons/pi";
 import Image from "next/image";
 import { FiMapPin } from "react-icons/fi";
+import { createUnitSlug } from "@/app/properties/[unit]/page";
 
 const PropertyUnits = () => {
   return (
@@ -21,7 +22,7 @@ const PropertyUnits = () => {
                 For Sale
               </span>
               <Image
-                src="/properties/2.jpg"
+                src="/design/units/1.jpg"
                 alt="property"
                 width={1000}
                 height={1000}
@@ -34,7 +35,7 @@ const PropertyUnits = () => {
                   Luxury Appartment - 2 Bedroom
                 </h3>
                 <Link
-                  href={"/properties"}
+                  href={`/properties/${createUnitSlug(2)}`}
                   className="text-sm text-[var(--theme-red)] font-semibold px-3 py-1 border-[var(--theme-red)] border-[2px]
                 hover:bg-[var(--theme-red)] hover:text-slate-100 rounded-sm duration-300"
                 >
@@ -71,7 +72,7 @@ const PropertyUnits = () => {
                 For Sale
               </span>
               <Image
-                src="/properties/3.jpg"
+                src="/design/units/2.jpg"
                 alt="property"
                 width={1000}
                 height={1000}
@@ -84,7 +85,7 @@ const PropertyUnits = () => {
                   Luxury Apartment - 3 Bedroom
                 </h3>
                 <Link
-                  href={"/properties"}
+                  href={`/properties/${createUnitSlug(2)}`}
                   className="text-sm text-[var(--theme-red)] font-semibold px-3 py-1 border-[var(--theme-red)] border-[2px]
                 hover:bg-[var(--theme-red)] hover:text-slate-100 rounded-sm duration-300"
                 >

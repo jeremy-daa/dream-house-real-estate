@@ -35,6 +35,24 @@ const page = () => {
         ]}
       />
       <Br />
+      <div className="flex flex-col items-center w-full">
+        <h2 className="uppercase text-xl text-[var(--theme-red)] font-semibold tracking-widest text-center">
+          Architectural Walkthrough
+        </h2>
+        <p className="capitalize text-5xl font-semibold text-[var(--theme-blue)] mt-5 mb-10 text-center ">
+          A 3D Walkthrough of the Building
+        </p>
+        <video
+          src="/video/1.mp4"
+          width="850"
+          height="480"
+          className="rounded-lg"
+          controls
+          loop
+          autoPlay
+        />
+      </div>
+      <Br />
       <GallerySlider
         title={"Floor Plans"}
         interval={4000}
@@ -72,24 +90,12 @@ const page = () => {
         subtitle={"2 Bedroom Option"}
         slides={[
           {
-            image: "/design/building/7.jpg",
-            tag: "Building Design",
+            image: "/design/units/1.jpg",
+            tag: "Appartment Unit",
           },
           {
-            image: "/design/building/1.jpg",
-            tag: "Front, Day View",
-          },
-          {
-            image: "/design/building/2.jpg",
-            tag: "Side, Night View",
-          },
-          {
-            image: "/design/building/3.jpg",
-            tag: "Side, Day View",
-          },
-          {
-            image: "/design/building/6.jpg",
-            tag: "Front, Night View",
+            image: "/design/plans/4.jpg",
+            tag: "Floor Plan",
           },
         ]}
         interval={5000}
@@ -100,24 +106,12 @@ const page = () => {
         subtitle={"3 Bedroom Option"}
         slides={[
           {
-            image: "/design/building/7.jpg",
-            tag: "Building Design",
+            image: "/design/units/2.jpg",
+            tag: "Appartment Unit",
           },
           {
-            image: "/design/building/1.jpg",
-            tag: "Front, Day View",
-          },
-          {
-            image: "/design/building/2.jpg",
-            tag: "Side, Night View",
-          },
-          {
-            image: "/design/building/3.jpg",
-            tag: "Side, Day View",
-          },
-          {
-            image: "/design/building/6.jpg",
-            tag: "Front, Night View",
+            image: "/design/plans/4.jpg",
+            tag: "Floor Plan",
           },
         ]}
         interval={2000}

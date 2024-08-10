@@ -3,12 +3,18 @@
 @tailwind utilities;
 
 :root {
+  /* --theme-blue: #00101f; */
   --theme-blue: #00101f;
-  --theme-red: #AD001D;
-  --red-transparent: #ad001d49;
+  /* --theme-red: #AD001D; */
+  --theme-red: #FE0002;
+  /* --red-transparent: #ad001d49; */
+  --red-transparent: #FE000249;
+  /* --blue-transparent: #00101fa3; */
   --blue-transparent: #00101fa3;
-  --card-blue: #041e35;
+  --card-color: #041e35;
+  --card-blue: #5E5970;
   --bg: #0D151E;
+  --nav-scroll: #0d151efa;
 }
 
 .button {
