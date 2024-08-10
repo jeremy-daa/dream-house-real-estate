@@ -259,7 +259,7 @@ const Testimonials = ({ reviews }: TestimonialProps) => {
           </Swiper>
           <div className="flex w-full justify-center items-center mb-6">
             <button
-              className="bg-[var(--theme-red)] text-white px-10 text-xl py-3 text-center rounded- mt-8 glowBlue hover:bg-[var(--theme-blue)] transition-all border-2 border-[var(--theme-blue)] "
+              className="bg-[var(--theme-red)] text-white px-10 text-xl py-3 text-center rounded- mt-8 glowBlue hover:bg-[var(--card-blue)] transition-all border-2 border-[var(--card-blue)] "
               onClick={() => {
                 setReviewModal(true);
               }}

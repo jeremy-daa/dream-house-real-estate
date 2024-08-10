@@ -36,6 +36,7 @@ const BookConsultation = ({
         name: name,
         phone: phone,
         message: message,
+        booking: true,
       }),
     });
 

@@ -7,15 +7,15 @@ import { getAuthSession } from "@/lib/authOptions";
 
 export async function POST(request: Request) {
   const body = await request.json();
-  const { name, email, phone, message, subject } = body;
+  const { name, email, phone, message, subject, booking } = body;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!email || !message) {
+  if ((!email || !message) && !booking) {
     return NextResponse.json(
       { message: "Email and message are required" },
       { status: 400 }
     );
   }
-  if (!emailRegex.test(email)) {
+  if (email && !emailRegex.test(email)) {
     return NextResponse.json(
       { message: "Invalid email address" },
       { status: 400 }
@@ -28,10 +28,10 @@ export async function POST(request: Request) {
     );
     const newContact = new Contact({
       name,
-      email,
+      email: email || "booking",
       phone,
       message,
-      subject,
+      subject: subject || "booking",
     });
     await newContact.save();
     return NextResponse.json(
