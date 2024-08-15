@@ -3,10 +3,10 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Map = () => {
   return (
-    <div className="mt-16">
-      <h2 className="text-5xl text-[var(--theme-red)] font-semibold text-center mb-8 flex justify-center items-center gap-4">
-        <FaLocationDot />
-        Our Property Location
+    <div className="padding">
+      <h2 className="title text-[var(--theme-red)] font-semibold text-center mb-8 flex justify-center items-center gap-4 flex-wrap">
+        <FaLocationDot className="" />
+        <span className="text-center">Our Property Location</span>
       </h2>
       <div className="relative w-full mt-14 border-[var(--theme-red)] border-4 map">
         <iframe

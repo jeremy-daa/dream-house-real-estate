@@ -34,7 +34,7 @@ const BlogCard = ({ title, img, date, slug }: BlogCardProps) => {
     return newDate.toLocaleDateString("en-US", options);
   };
   return (
-    <div className="w-[380px] h-[450px] flex flex-col bg-slate-50 shadowContactSm p-3 rounded">
+    <div className="xs:w-[380px] w-[300px] h-[450px] flex flex-col bg-slate-50 shadowContactSm p-3 rounded">
       <Image
         src={img}
         alt="blog"
@@ -42,9 +42,9 @@ const BlogCard = ({ title, img, date, slug }: BlogCardProps) => {
         height={500}
         className="w-full h-[200px] object-cover"
       />
-      <div className="flex flex-col h-full justify-between px-10 pt-6">
+      <div className="flex flex-col h-full justify-between xs:px-10 px-3 pt-6">
         <div className="flex flex-col gap-5 ">
-          <div className="flex gap-3 items-center text-slate-500 uppercase text-sm tracking-widest">
+          <div className="flex xs:gap-3 gap-1 items-center text-slate-500 uppercase text-sm tracking-widest">
             <span>{checkNovelty(date)}</span>
             <span className="w-[5px] h-[5px] rounded-full bg-[var(--theme-red)]"></span>
             <span className="text-[10px] text-slate-50 px-3 py-[2px] rounded-lg bg-[var(--theme-red)] whitespace-nowrap">

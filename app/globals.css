@@ -12,10 +12,13 @@
   /* --blue-transparent: #00101fa3; */
   --blue-transparent: #00101fa3;
   --card-color: #0d151efa;
-  --card-blue: #5E5970;
+  /* --card-blue: #5E5970; */
+  --card-blue: #0d151e;
   --bg: #0D151E;
   --nav-scroll: #0d151efa;
 }
+
+
 
 .button {
   @apply px-6 py-2 text-[var(--theme-red)] rounded-sm border-2 border-[var(--theme-red)] hover:text-[var(--theme-blue)] hover:bg-[var(--theme-red)] hover:border-[var(--theme-red)] duration-500 glow;
@@ -44,7 +47,7 @@
 }
 
 .padding {
-  @apply lg:px-24 md:px-16 px-6 md:mt-24 mt-16
+  @apply lg:px-20 md:px-16 px-6 md:mt-24 mt-16
 }
 
 .title {
@@ -52,7 +55,7 @@
 }
 
 .subtitle {
-  @apply text-xl
+  @apply xs:text-xl text-lg
 }
 
 .floatingAction {
@@ -358,10 +361,6 @@
 }
 
 .ham-menu {
-  height: 45px;
-  min-height: 45px;
-  width: 45px;
-  min-width: 45px;
   background: var(--nav-scroll);
   border: 2px;
   border: 2px solid var(--theme-red);

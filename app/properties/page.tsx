@@ -9,9 +9,9 @@ const page = () => {
   return (
     <div>
       <PageHero title="Our Properties" img="/page_hero.png" />
-      <PropertyIntro />
-      <PropertyInfo />
-      <PropertyUnits />
+      {/* <PropertyIntro /> */}
+      {/* <PropertyInfo /> */}
+      {/* <PropertyUnits /> */}
       <Map />
     </div>
   );

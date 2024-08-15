@@ -54,7 +54,7 @@ const NavBar = () => {
             height={80}
             className="w-auto sm:h-[50px] h-[40px]"
           />
-          <h1 className="text-[var(--card-blue)] sm:text-2xl text-xl tracking-widest font-semibold uppercase">
+          <h1 className="text-[var(--theme-red)] sm:text-2xl text-xl tracking-widest font-semibold uppercase">
             Dream House
           </h1>
         </Link>
@@ -187,7 +187,9 @@ const NavBar = () => {
           </ul>
         </div>
         <div
-          className={`ham-menu block xl:hidden ${menu ? "activeMobile" : ""}`}
+          className={`ham-menu sm:min-h-[45px] min-h-[35px] md:min-w-[45px] min-w-[35px] block xl:hidden ${
+            menu ? "activeMobile" : ""
+          }`}
           onClick={() => setMenu(!menu)}
         >
           <span></span>

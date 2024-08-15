@@ -30,8 +30,8 @@ export default async function Home() {
       <HomeProperties />
       <LocationInfo />
       <Testimonials reviews={reviews} />
-      {/* <RecentUpdates lastThree={lastThree} /> */}
-      {/* <Map /> */}
+      <RecentUpdates lastThree={lastThree} />
+      <Map />
     </div>
   );
 }

@@ -21,7 +21,7 @@ const HomeHero = () => {
         }}
       ></div>
       <div className="w-full h-full flex justify-center items-center z-10 px-8">
-        <div className="text-center text-slate-100 flex flex-col gap-4 items-center max-w-[700px] z-10 translate-y-[50px]">
+        <div className="text-center text-slate-100 flex flex-col gap-4 items-center max-w-[700px] z-10 sm:translate-y-[50px] translate-y-0">
           <p
             className={`md:text-2xl text-xl font-extralight ${poppinsLight.className}`}
           >
