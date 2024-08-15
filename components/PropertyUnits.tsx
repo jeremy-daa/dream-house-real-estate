@@ -5,7 +5,7 @@ import { MdSquareFoot } from "react-icons/md";
 import { PiBathtub } from "react-icons/pi";
 import Image from "next/image";
 import { FiMapPin } from "react-icons/fi";
-import { createUnitSlug } from "@/app/properties/[unit]/page";
+import { createUnitSlug } from "@/utils/functions";
 
 const PropertyUnits = () => {
   return (
