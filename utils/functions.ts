@@ -43,6 +43,14 @@ const compareHash = (pass: string, hash: string) => {
 const hashPassword = (pass: string) => {
   return bcrypt.hashSync(pass, salt);
 };
+export const createUnitSlug = (bedroom: number) => {
+  const baseText = "Bedroom Luxury Appartments";
+  return `${bedroom}-${baseText.replace(/ /g, "-").toLowerCase()}`;
+};
+export const createUnitTitle = (slug: string) => {
+  const baseText = "Bedroom Luxury Appartments";
+  return `${slug.split("-")[0]} ${baseText}`;
+};
 
 export {
   cropString,

@@ -2,6 +2,7 @@ import Br from "@/components/Br";
 import GallerySlider from "@/components/GallerySlider";
 import PageHero from "@/components/PageHero";
 import UnitInfo from "@/components/UnitInfo";
+import { createUnitSlug, createUnitTitle } from "@/utils/functions";
 import { notFound } from "next/navigation";
 import React from "react";
 interface Params {
@@ -9,14 +10,7 @@ interface Params {
     unit: string;
   };
 }
-export const createUnitSlug = (bedroom: number) => {
-  const baseText = "Bedroom Luxury Appartments";
-  return `${bedroom}-${baseText.replace(/ /g, "-").toLowerCase()}`;
-};
-export const createUnitTitle = (slug: string) => {
-  const baseText = "Bedroom Luxury Appartments";
-  return `${slug.split("-")[0]} ${baseText}`;
-};
+
 const page = ({ params: { unit } }: Params) => {
   const units = [
     {

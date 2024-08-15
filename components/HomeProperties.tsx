@@ -5,7 +5,7 @@ import { LiaBedSolid } from "react-icons/lia";
 import { PiBathtub } from "react-icons/pi";
 import { MdSquareFoot } from "react-icons/md";
 import { FiMapPin } from "react-icons/fi";
-import { createUnitSlug } from "@/app/properties/[unit]/page";
+import { createUnitSlug } from "@/utils/functions";
 
 const HomeProperties = () => {
   return (
