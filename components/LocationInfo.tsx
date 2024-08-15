@@ -15,11 +15,11 @@ const LocationInfo = () => {
   }, []);
 
   return (
-    <div className="mt-24 flex justify-between px-32">
+    <div className="padding flex justify-between lg:flex-row flex-col-reverse">
       {/* <Image */}
 
-      <div className=" flex flex-col items-start gap-10 overflow-hidden">
-        <h2 className="text-6xl text-[var(--theme-blue)] font-semibold text-start">
+      <div className=" flex flex-col lg:items-start gap-10 overflow-hidden items-center lg:text-start text-center">
+        <h2 className="title text-[var(--theme-blue)] font-semibold">
           Property Locations
         </h2>
         <p className="text-lg text-slate-500 max-w-xl">
@@ -37,53 +37,53 @@ const LocationInfo = () => {
           }}
         >
           <div className="flex flex-col gap-3 min-w-full">
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <IoLocationOutline className="text-3xl text-[var(--theme-red)]" />
-              <span className="text-lg text-[var(--theme-red)]">
+            <h3 className="sm:px-3 sm:py-3 px-1 py-2 rounded-sm w-full flex items-center sm:gap-5 gap-3 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <IoLocationOutline className="sm:text-3xl text-xl text-[var(--theme-red)]" />
+              <span className="sm:text-lg text-base text-[var(--theme-red)]">
                 1.9 KM from UN Office
               </span>
             </h3>
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <IoLocationOutline className="text-3xl text-[var(--theme-red)]" />
-              <span className="text-lg text-[var(--theme-red)]">
+            <h3 className="sm:px-3 sm:py-3 px-1 py-2 rounded-sm w-full flex items-center sm:gap-5 gap-3 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <IoLocationOutline className="sm:text-3xl text-xl text-[var(--theme-red)]" />
+              <span className="sm:text-lg text-base text-[var(--theme-red)]">
                 2.1 KM from GIZ Office
               </span>
             </h3>
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <IoLocationOutline className="text-3xl text-[var(--theme-red)]" />
-              <span className="text-lg text-[var(--theme-red)]">
+            <h3 className="sm:px-3 sm:py-3 px-1 py-2 rounded-sm w-full flex items-center sm:gap-5 gap-3 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <IoLocationOutline className="sm:text-3xl text-xl text-[var(--theme-red)]" />
+              <span className="sm:text-lg text-base text-[var(--theme-red)]">
                 1.9 KM from German Embassy
               </span>
             </h3>
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <IoLocationOutline className="text-3xl text-[var(--theme-red)]" />
-              <span className="text-lg text-[var(--theme-red)]">
+            <h3 className="sm:px-3 sm:py-3 px-1 py-2 rounded-sm w-full flex items-center sm:gap-5 gap-3 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <IoLocationOutline className="sm:text-3xl text-xl text-[var(--theme-red)]" />
+              <span className="sm:text-lg text-base text-[var(--theme-red)]">
                 2.4 KM from Belgium Embassy
               </span>
             </h3>
           </div>
           <div className="flex flex-col gap-3 min-w-full">
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <IoLocationOutline className="text-3xl text-[var(--theme-red)]" />
-              <span className="text-lg text-[var(--theme-red)]">
+            <h3 className="sm:px-3 sm:py-3 px-1 py-2 rounded-sm w-full flex items-center sm:gap-5 gap-3 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <IoLocationOutline className="sm:text-3xl text-xl text-[var(--theme-red)]" />
+              <span className="sm:text-lg text-base text-[var(--theme-red)]">
                 2.8 KM from British Embassy
               </span>
             </h3>
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <IoLocationOutline className="text-3xl text-[var(--theme-red)]" />
-              <span className="text-lg text-[var(--theme-red)]">
+            <h3 className="sm:px-3 sm:py-3 px-1 py-2 rounded-sm w-full flex items-center sm:gap-5 gap-3 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <IoLocationOutline className="sm:text-3xl text-xl text-[var(--theme-red)]" />
+              <span className="sm:text-lg text-base text-[var(--theme-red)]">
                 3.1 KM from Russian Embassy
               </span>
             </h3>
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <IoLocationOutline className="text-3xl text-[var(--theme-red)]" />
-              <span className="text-lg text-[var(--theme-red)]">
+            <h3 className="sm:px-3 sm:py-3 px-1 py-2 rounded-sm w-full flex items-center sm:gap-5 gap-3 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <IoLocationOutline className="sm:text-3xl text-xl text-[var(--theme-red)]" />
+              <span className="sm:text-lg text-base text-[var(--theme-red)]">
                 2.9 KM from Italy Embassy
               </span>
             </h3>
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <IoLocationOutline className="text-3xl text-[var(--theme-red)]" />
-              <span className="text-lg text-[var(--theme-red)]">
+            <h3 className="sm:px-3 sm:py-3 px-1 py-2 rounded-sm w-full flex items-center sm:gap-5 gap-3 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <IoLocationOutline className="sm:text-3xl text-xl text-[var(--theme-red)]" />
+              <span className="sm:text-lg text-base text-[var(--theme-red)]">
                 2.3 KM from Kenya Embassy
               </span>
             </h3>
@@ -105,7 +105,7 @@ const LocationInfo = () => {
           ></button>
         </div>
       </div>
-      <div className="pl-10 pt-10 flex justify-center items-center">
+      <div className="xl:pl-10 pl-0 xl:pt-10 pt-0 lg:mb-0 mb-14 flex justify-center items-center">
         <Image
           src="/vectors/best-location.svg"
           alt="location"

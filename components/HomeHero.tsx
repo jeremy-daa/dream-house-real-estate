@@ -20,12 +20,14 @@ const HomeHero = () => {
           opacity: 0.6,
         }}
       ></div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[100px]">
-        <div className="text-center text-slate-100 flex flex-col gap-4 items-center">
-          <p className={`text-2xl font-extralight ${poppinsLight.className}`}>
+      <div className="w-full h-full flex justify-center items-center z-10 px-8">
+        <div className="text-center text-slate-100 flex flex-col gap-4 items-center max-w-[700px] z-10 translate-y-[50px]">
+          <p
+            className={`md:text-2xl text-xl font-extralight ${poppinsLight.className}`}
+          >
             Dream House Real Estate
           </p>
-          <h1 className="text-5xl mb-4 leading-snug">
+          <h1 className="md:text-5xl text-[32px] mb-4 leading-snug">
             Your Trusted Partner in Developing Perfect Homes in Addis Ababa
           </h1>
           <Link

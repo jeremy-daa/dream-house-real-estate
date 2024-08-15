@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HomeInfo = () => {
   return (
-    <div className="flex flex-col gap-16 mt-24 px-16">
+    <div className="flex flex-col gap-16 padding">
       <div className="w-full flex flex-col items-center gap-8">
         <h2 className="text-4xl text-[var(--theme-red)] font-semibold text-center">
           Why Choose Us
@@ -13,8 +13,8 @@ const HomeInfo = () => {
           Ababa. Here are some reasons why our clients choose us.
         </p>
       </div>
-      <div className="flex justify-between gap-5">
-        <div className="card w-[24%] h-[210px] select-none">
+      <div className="flex justify-center gap-5 flex-wrap">
+        <div className="card w-[350px] h-[210px] select-none">
           <div className="card-inner">
             <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-color)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
               <Image src="/vectors/roi.svg" alt="ROI" width={60} height={60} />
@@ -30,7 +30,7 @@ const HomeInfo = () => {
             </div>
           </div>
         </div>
-        <div className="card w-[24%] h-[210px] select-none">
+        <div className="card w-[350px] h-[210px] select-none">
           <div className="card-inner">
             <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-color)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
               <Image
@@ -52,7 +52,7 @@ const HomeInfo = () => {
             </div>
           </div>
         </div>
-        <div className="card w-[24%] h-[210px] select-none">
+        <div className="card w-[350px] h-[210px] select-none">
           <div className="card-inner">
             <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-color)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
               <Image
@@ -74,7 +74,7 @@ const HomeInfo = () => {
             </div>
           </div>
         </div>
-        <div className="card w-[24%] h-[210px] select-none">
+        <div className="card w-[350px] h-[210px] select-none">
           <div className="card-inner">
             <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-color)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
               <Image

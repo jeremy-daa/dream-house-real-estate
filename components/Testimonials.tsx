@@ -50,7 +50,7 @@ const Testimonials = ({ reviews }: TestimonialProps) => {
   };
 
   return (
-    <div className="mt-24 relative">
+    <div className="padding relative">
       {/* Review Modal Start */}
       <div
         style={{
@@ -186,13 +186,13 @@ const Testimonials = ({ reviews }: TestimonialProps) => {
       </div>
       {/* Review Modal End */}
       <div className="flex items-center flex-col gap-5 overflow-hidden">
-        <h2 className="text-6xl text-[var(--theme-blue)] font-semibold text-center">
+        <h2 className="title text-[var(--theme-blue)] font-semibold text-center">
           Testimonials
         </h2>
-        <p className="text-center text-lg text-slate-500 max-w-xl">
+        <p className="text-center subtitle text-slate-500 max-w-xl">
           Hear what our clients have to say about us.
         </p>
-        <div className="w-[80%] mx-auto">
+        <div className="w-full">
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
@@ -212,13 +212,13 @@ const Testimonials = ({ reviews }: TestimonialProps) => {
               reviews.map((review, i) => {
                 return (
                   <SwiperSlide className="pb-24 pt-5" key={i}>
-                    <div className="w-[800px] h-[400px] mx-auto flex flex-col items-center p-6 space-y-8 rounded-lg lg:h-full lg:p-8 bg-slate-200 shadowContact text-slate-900 relative">
+                    <div className="lg:w-[800px] sm:w-[500px] w-full h-full mx-auto flex flex-col items-center p-6 space-y-8 rounded-lg lg:p-8 bg-slate-200 shadowContact text-slate-900 relative">
                       <Image
                         src={"/vectors/quote.svg"}
                         alt="quote"
                         width={50}
                         height={50}
-                        className="absolute text-5xl top-24 left-20 max-w-20 max-h-20"
+                        className="absolute lg:visible invisible top-24 left-20 max-w-20 max-h-20"
                       />
                       <span className="p-3 rounded-full border-[3px] border-[var(--theme-red)]">
                         <Image

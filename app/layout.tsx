@@ -8,7 +8,6 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import FloatingAction from "@/components/FloatingAction";
 import { poppinsNormal } from "@/components/Fonts";
-import AuthProvider from "@/context/AuthProvider";
 import { ToastContainer } from "react-toastify";
 export const metadata: Metadata = {
   title:
@@ -25,27 +24,24 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppinsNormal.className}>
-        <AuthProvider>
-          <NavBar />
-
-          <main className="">
-            <ToastContainer
-              position="top-center"
-              autoClose={5000}
-              hideProgressBar={false}
-              newestOnTop={false}
-              closeOnClick
-              rtl={false}
-              pauseOnFocusLoss
-              draggable
-              pauseOnHover
-              theme="dark"
-            />
-            {children}
-          </main>
+        <NavBar />
+        <main className="">
+          <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+          />
+          {children}
           <FloatingAction />
-          <Footer />
-        </AuthProvider>
+        </main>
+        {/* <Footer /> */}
       </body>
     </html>
   );

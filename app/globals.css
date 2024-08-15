@@ -37,8 +37,26 @@
   background-color: var(--theme-red);
 }
 
+.active.mobile::before {
+  height: 3px;
+  bottom: -4px;
+
+}
+
+.padding {
+  @apply lg:px-24 md:px-16 px-6 md:mt-24 mt-16
+}
+
+.title {
+  @apply md:text-5xl text-4xl
+}
+
+.subtitle {
+  @apply text-xl
+}
+
 .floatingAction {
-  @apply w-[3.5rem] h-[3.5rem] rounded-[50%] cursor-pointer border-[2px] duration-300;
+  @apply rounded-[50%] cursor-pointer border-[2px] duration-300;
 
 }
 
@@ -227,7 +245,35 @@
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--theme-red) !important;
+  min-width: 60px;
+  min-height: 60px;
+  border-radius: 100%;
+  background: var(--nav-scroll) !important;
 }
+
+@media screen and (max-width: 640px) {
+  .swiper-button-prev {
+    left: 0 !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  .swiper-button-next {
+    right: 0 !important;
+
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 20px !important;
+    padding: 5px !important;
+  }
+}
+
 
 .swiper-pagination-bullet-active {
   background-color: var(--theme-red) !important;
@@ -288,4 +334,74 @@
   letter-spacing: 1px;
   text-align: center !important;
   white-space: nowrap !important;
+}
+
+.off-screen-menu {
+  background-color: rgb(34, 37, 49);
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: .3s ease;
+}
+
+.off-screen-menu.activeMobile {
+  right: 0;
+}
+
+.ham-menu {
+  height: 45px;
+  min-height: 45px;
+  width: 45px;
+  min-width: 45px;
+  background: var(--nav-scroll);
+  border: 2px;
+  border: 2px solid var(--theme-red);
+  border-radius: 100%;
+  position: relative;
+}
+
+.ham-menu span {
+  height: 2px;
+  width: 65%;
+  background-color: var(--theme-red);
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+
+
+
+.ham-menu span:nth-child(1) {
+  top: 33%;
+}
+
+.ham-menu span:nth-child(3) {
+  top: 67%;
+}
+
+
+.ham-menu.activeMobile span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.activeMobile span:nth-child(2) {
+  opacity: 0;
+}
+
+.ham-menu.activeMobile span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
