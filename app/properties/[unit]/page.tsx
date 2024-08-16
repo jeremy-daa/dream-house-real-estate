@@ -41,6 +41,8 @@ const page = ({ params: { unit } }: Params) => {
       unitSlug: createUnitSlug(3),
       description:
         "Discover luxury in our 3-bedroom apartments in Kebena. Enjoy high-quality European finishes, spacious living areas, modern kitchens, and a 15 SQM terrace with breathtaking views. Amenities include parking, a gym, a heated pool, and a roof-top terrace with 360-degree views. Advanced security features ensure your safety.",
+      img: "/design/units/2.jpg",
+
       slider: {
         title: "Appartment Units",
         subtitle: "3 Bedroom Option",

@@ -48,7 +48,7 @@ const HomeProperties = () => {
               <div className="mt-5 flex justify-center flex-wrap items-center gap-2">
                 <span className="sm:px-6 sm:py-2 px-3 py-1 rounded-3xl text-sm flex gap-4 items-center bg-[var(--theme-red)] text-slate-100">
                   <LiaBedSolid className="sm:text-xl text-base" />
-                  <span className="font-semibold">3</span>
+                  <span className="font-semibold">2</span>
                 </span>
                 <div className="w-[2px] rounded-md bg-[var(--theme-red)] h-8"></div>
                 <span className="sm:px-6 sm:py-2 px-3 py-1 rounded-3xl text-sm flex gap-4 items-center bg-[var(--theme-red)] text-slate-100">
@@ -58,7 +58,7 @@ const HomeProperties = () => {
                 <div className="w-[2px] rounded-md bg-[var(--theme-red)] h-8"></div>
                 <span className="sm:px-6 sm:py-2 px-3 py-1 rounded-3xl text-sm flex gap-4 items-center bg-[var(--theme-red)] text-slate-100">
                   <MdSquareFoot className="sm:text-xl text-base" />
-                  <span className="font-semibold">170 sqm</span>
+                  <span className="font-semibold">98 sqm</span>
                 </span>
               </div>
               <div className="mt-5 flex gap-2 text-slate-500 items-center">
@@ -98,17 +98,17 @@ const HomeProperties = () => {
               <div className="mt-5 flex justify-center flex-wrap items-center gap-2">
                 <span className="sm:px-6 sm:py-2 px-3 py-1 rounded-3xl text-sm flex gap-4 items-center bg-[var(--theme-red)] text-slate-100">
                   <LiaBedSolid className="sm:text-xl text-base" />
-                  <span className="font-semibold">4</span>
-                </span>
-                <div className="w-[2px] rounded-md bg-[var(--theme-red)] h-8"></div>
-                <span className="sm:px-6 sm:py-2 px-3 py-1 rounded-3xl text-sm flex gap-4 items-center bg-[var(--theme-red)] text-slate-100">
-                  <PiBathtub className="sm:text-xl text-base" />
                   <span className="font-semibold">3</span>
                 </span>
                 <div className="w-[2px] rounded-md bg-[var(--theme-red)] h-8"></div>
                 <span className="sm:px-6 sm:py-2 px-3 py-1 rounded-3xl text-sm flex gap-4 items-center bg-[var(--theme-red)] text-slate-100">
+                  <PiBathtub className="sm:text-xl text-base" />
+                  <span className="font-semibold">2</span>
+                </span>
+                <div className="w-[2px] rounded-md bg-[var(--theme-red)] h-8"></div>
+                <span className="sm:px-6 sm:py-2 px-3 py-1 rounded-3xl text-sm flex gap-4 items-center bg-[var(--theme-red)] text-slate-100">
                   <MdSquareFoot className="sm:text-xl text-base" />
-                  <span className="font-semibold">250 sqm</span>
+                  <span className="font-semibold">171 sqm</span>
                 </span>
               </div>
               <div className="mt-5 flex gap-2 text-slate-500 items-center">
