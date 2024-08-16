@@ -29,15 +29,15 @@ const BlogList = ({
   setDeleteModal,
 }: BlogListProps) => {
   return (
-    <div className="w-full shadowContactSm rounded-md px-5 py-5 flex justify-start items-start mb-8 max-h-[340px] ">
+    <div className="xl:w-[85%] lg:w-full sm:w-[450px] w-full mx-auto shadowContactSm rounded-md px-5 py-5 flex justify-start items-center lg:items-start mb-8 lg:max-h-[340px] lg:flex-row flex-col lg:gap-5 gap-8">
       <Image
         src={image}
-        className="h-[200px] min-w-[250px] object-cover rounded-sm border-[2px] border-[var(--theme-yellow)]"
+        className="h-[300px] min-w-[250px] w-full object-cover rounded-sm border-[2px] border-[var(--theme-yellow)]"
         width={350}
         height={350}
         alt={""}
       />
-      <div className="ml-10 w-full  flex flex-col justify-between items-start">
+      <div className="lg:ml-10 w-full lg:px-0 xs:px-4 px-1  flex flex-col justify-between items-start">
         <div>
           <Link
             href={`/updates/${slug}`}
@@ -67,7 +67,7 @@ const BlogList = ({
         )}
       </div>
       {/* buttons to delete and edit*/}
-      <div className="ml-10 min-w-[160px] flex justify-center items-end flex-col">
+      <div className="lg:ml-10 min-w-[160px] flex lg:justify-center justify-start items-end lg:flex-col flex-row lg:gap-0 gap-5 self-start xs:px-4 px-1">
         <button
           className="bg-[var(--card-blue)] text-white rounded-sm expandButton glowSmBlue"
           onClick={() => {

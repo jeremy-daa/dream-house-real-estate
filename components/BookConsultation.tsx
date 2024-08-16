@@ -75,14 +75,14 @@ const BookConsultation = ({
           backgroundColor: "white",
           borderRadius: "10px",
         }}
-        className="shadowContact"
+        className="shadowContact xl:w-[800px] lg:w-[60%] md:w-[70%] w-[90%] mx-auto"
       >
         <div className="w-full mx-auto rounded-lg flex shadowContact p-4 relative">
           <IoCloseCircleOutline
             className="absolute top-4 right-5 text-4xl text-[var(--theme-red)] cursor-pointer hover:text-[var(--theme-blue)] duration-300 hover:scale-110"
             onClick={() => setConsultationModal(false)}
           />
-          <form className="flex flex-col p-8 rounded-lg text-slate-400">
+          <form className="flex flex-col sm:p-8 xs:p-4 p-2 rounded-lg text-slate-400">
             <h2 className="text-2xl font-semibold text-slate-900 text-center">
               Send Us a Message
             </h2>
@@ -97,7 +97,7 @@ const BookConsultation = ({
             )}
             {/* <div className="h-[3px] rounded-lg w-[40%] mx-auto bg-[var(--theme-red)] mt-2 mb-5"></div> */}
             <div className="flex flex-col gap-4">
-              <div className="flex gap-5 w-full">
+              <div className="flex gap-5 w-full flex-col md:flex-row">
                 <div className="flex flex-col gap-2 w-full">
                   <label htmlFor="name">Name</label>
                   <input

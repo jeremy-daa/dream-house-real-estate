@@ -26,9 +26,9 @@ const page = async ({ params: { slug } }: Params) => {
   return (
     <div>
       <PageHero title={title} img={image} />
-      <div className="flex px-32 justify-between mt-12">
-        <div className="flex-[0.6] flex flex-col gap-6">
-          <h2 className="text-5xl font-semibold text-[var(--theme-red)] mt-5 mb-2 capitalize leading-snug tracking-wide">
+      <div className="flex lg:px-20 md:px-16 px-6 justify-between mt-12 flex-col lg:flex-row">
+        <div className="flex-[0.6] flex flex-col md:gap-6 gap-3">
+          <h2 className="title font-semibold text-[var(--theme-red)] mt-5 mb-2 capitalize leading-snug tracking-wide">
             {title}
           </h2>
           <Image

@@ -100,7 +100,7 @@ const CommentSection = ({
         </div>
       </div>
       {/* Leave a comment */}
-      <div className="w-full flex flex-col items-center justify-center shadowContactSm mt-10 px-8 rounded-lg pb-5">
+      <div className="w-full flex flex-col items-center justify-center shadowContactSm mt-10 px-4 sm:px-8 rounded-lg pb-5">
         <h1 className="text-2xl font-bold text-[var(--theme-red)] text-center my-5 px-4">
           Leave a Comment
         </h1>

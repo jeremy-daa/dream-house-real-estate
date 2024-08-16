@@ -28,8 +28,8 @@ const AdminHero = ({
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
       />
       {/* Logout */}
-      <div className="flex flex-col gap-14 justify-between items-center">
-        <h1 className="text-slate-100 text-6xl font-semibold tracking-wider">
+      <div className="flex flex-col gap-14 justify-between items-center px-6">
+        <h1 className="text-slate-100 title font-semibold tracking-wider text-center">
           Welcome Back,{" "}
           <span className="text-[var(--theme-red)] italic">{firstName}</span>
         </h1>

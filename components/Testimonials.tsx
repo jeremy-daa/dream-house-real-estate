@@ -72,16 +72,15 @@ const Testimonials = ({ reviews }: TestimonialProps) => {
             transform: "translate(-50%, -50%)",
             backgroundColor: "white",
             borderRadius: "10px",
-            width: "50%",
           }}
-          className="shadowContact flex justify-center items-center"
+          className="shadowContact xl:w-[800px] lg:w-[60%] md:w-[70%] w-[90%] mx-auto"
         >
           <div className="w-full rounded-lg flex justify-center shadowContact p-4 relative">
             <IoCloseCircleOutline
               className="absolute top-4 right-5 text-4xl text-[var(--theme-red)] cursor-pointer hover:text-[var(--theme-blue)] duration-300 hover:scale-110"
               onClick={() => setReviewModal(false)}
             />
-            <form className="flex flex-col p-8 px-5 rounded-lg text-slate-400 w-full">
+            <form className="flex flex-col sm:p-8 xs:p-4 p-2 rounded-lg text-slate-400 w-full">
               <div className="mb-3">
                 <h2 className="text-2xl font-semibold text-slate-900 text-center">
                   Write a Review
@@ -97,7 +96,7 @@ const Testimonials = ({ reviews }: TestimonialProps) => {
               )}
               {/* <div className="h-[3px] rounded-lg w-[40%] mx-auto bg-[var(--theme-red)] mt-2 mb-5"></div> */}
               <div className="flex flex-col gap-4">
-                <div className="flex gap-3 w-full">
+                <div className="flex gap-3 w-full flex-col md:flex-row">
                   <div className="flex flex-col gap-2 w-full">
                     <label htmlFor="name">Name</label>
                     <input

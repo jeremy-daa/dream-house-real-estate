@@ -29,19 +29,19 @@ const AdminDashboardBlog = ({
   // const cld = new Cloudinary({ cloud: { cloudName, apiKey, apiSecret } });
 
   return (
-    <div className="mt-16">
+    <div className="mt-16 lg:px-20 md:px-16 px-6">
       <div>
-        <div className="w-[75%] mx-auto">
-          <h1 className="text-6xl text-[var(--theme-red)] font-semibold text-center mb-6">
+        <div className="">
+          <h1 className="title text-[var(--theme-red)] font-semibold text-center mb-6">
             Write a new post
           </h1>
           <div
-            className="max-w-[700px] mx-auto h-[150px] cursor-pointer hover:scale-[1.02] duration-300 boxShadow rounded-md shadowContactSm mb-5 flex justify-center items-center"
+            className="max-w-[700px] mx-auto md:h-[150px] h-[100px] cursor-pointer hover:scale-[1.02] duration-300 boxShadow rounded-md shadowContactSm mb-5 flex justify-center items-center"
             onClick={() => setAddModal(true)}
           >
-            <PiPlusCircleThin className="text-[var(--theme-red)] text-8xl" />
+            <PiPlusCircleThin className="text-[var(--theme-red)] md:text-8xl text-6xl" />
           </div>
-          <h1 className="text-[50px] text-[var(--theme-yellow)] font-semibold text-center mb-8">
+          <h1 className="title text-[var(--theme-yellow)] font-semibold text-center mb-8">
             Recent posts
           </h1>
           {loading && (

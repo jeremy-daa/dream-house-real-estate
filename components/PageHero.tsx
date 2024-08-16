@@ -45,7 +45,7 @@ const PageHero = ({ title, img }: { title: string; img?: string }) => {
         }}
       ></div>
       <h1
-        className="text-[var(--card-color)] title tracking-wider leading-snug max-w-6xl text-center px-6 py-1 rounded-sm bg-[var(--theme-red)] select-none"
+        className="text-[var(--card-color)] title tracking-wider leading-snug max-w-6xl text-center mx-6 px-6 py-3 rounded-sm bg-[var(--theme-red)] select-none capitalize"
         style={{ zIndex: 1 }}
       >
         {title}

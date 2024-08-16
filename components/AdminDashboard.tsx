@@ -9,16 +9,23 @@ import EditModal from "./EditModal";
 import AddModal from "./AddModal";
 import DeleteModal from "./DeleteModal";
 
-const AdminDashboard = () => {
+const AdminDashboard = ({
+  postsServer,
+  reviewsServer,
+}: {
+  postsServer: any;
+  reviewsServer: any;
+}) => {
+  console.log(reviewsServer);
   const options = ["Updates", "Reviews"];
   const [editModal, setEditModal] = useState(false);
   const [postSlug, setPostSlug] = useState("");
   const [deleteModal, setDeleteModal] = useState(false);
   const [addModal, setAddModal] = useState(false);
   const [selected, setSelected] = useState("Updates");
-  const [posts, setPosts] = useState([]);
-  const [reviews, setReviews] = useState<Review[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [posts, setPosts] = useState(postsServer);
+  const [reviews, setReviews] = useState<Review[]>(reviewsServer);
+  const [loading, setLoading] = useState(false);
   const [uploadCredentials, setUploadCredentials] = React.useState<any>();
   const fetchUploadCredentials = async () => {
     const response = await fetch("/api/upload", {
@@ -45,10 +52,8 @@ const AdminDashboard = () => {
   }, [setLoading, setReviews]);
 
   useEffect(() => {
-    awaitPosts();
-    awaitReviews();
     fetchUploadCredentials();
-  }, [awaitPosts, awaitReviews]);
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelected(e.target.value);

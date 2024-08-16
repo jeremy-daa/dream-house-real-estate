@@ -5,6 +5,7 @@ import { Review } from "./AdminDashboardReview";
 import { FaRegStar, FaStar } from "react-icons/fa";
 import { TbEye, TbEyeClosed } from "react-icons/tb";
 import { toast } from "react-toastify";
+import Br from "./Br";
 
 const AdminReviewList = ({
   _id,
@@ -34,7 +35,7 @@ const AdminReviewList = ({
     }
   };
   return (
-    <div className="w-full shadowContactSm rounded-md px-10 py-5 flex justify-start items-start mb-8 max-h-[340px] ">
+    <div className="xl:w-[85%] lg:w-full sm:w-[450px] w-full mx-auto shadowContactSm rounded-md xs:px-10 px-4 lg:py-5 py-10 flex justify-start items-center lg:items-start mb-8 lg:max-h-[340px] lg:flex-row flex-col lg:gap-5 gap-8">
       <div className="flex flex-col items-center gap-5">
         <span className="p-3 my-2 rounded-full border-[3px] border-[var(--theme-red)]">
           <Image
@@ -81,8 +82,9 @@ const AdminReviewList = ({
           </div>
         </button>
       </div>
-      <div className="ml-10 w-full  flex flex-col justify-between items-start">
-        <div>
+      <div className="center-ball block lg:hidden my-2 w-[300px] h-[2px] bg-[var(--theme-red)] relative mx-auto" />
+      <div className="xl:ml-10 w-full  flex flex-col justify-between items-start">
+        <div className="">
           <h2 className="text-3xl font-medium mt-2 text-[var(--theme-red)] mb-3 border-b-[2px] hover:border-b-[var(--theme-red)] duration-300 border-b-transparent capitalize w-fit pr-2">
             {name}
           </h2>

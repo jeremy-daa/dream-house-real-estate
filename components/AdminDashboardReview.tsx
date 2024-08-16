@@ -25,8 +25,8 @@ const AdminDashboardReview = ({
   return (
     <div className="relative mt-16">
       <div>
-        <div className="w-[75%] mx-auto">
-          <h1 className="text-[50px] text-[var(--theme-yellow)] font-semibold text-center mb-8">
+        <div className="lg:px-20 md:px-16 px-6">
+          <h1 className="title text-[var(--theme-yellow)] font-semibold text-center mb-8">
             Recent Reviews
           </h1>
           {loading && (

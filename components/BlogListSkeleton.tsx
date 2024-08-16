@@ -1,7 +1,7 @@
 const BlogList = () => {
   return (
     <div className="w-full rounded-md px-5 py-5 flex justify-start items-start mb-8 shadowContact">
-      <div className="pulseText min-h-[300px] min-w-[250px] object-cover rounded-sm border-[2px] border-[var(--theme-red)] bg-[#e6e6e6e5]"></div>
+      <div className="pulseText min-h-[200px] min-w-[250px] object-cover rounded-sm border-[2px] border-[var(--theme-red)] bg-[#e6e6e6e5]"></div>
       <div className="ml-10 w-full">
         <div>
           <h1 className="h-[50px] min-w-[200px] font-medium pulseText mt-2 text-[var(--theme-yellow)] bg-[var(--theme-red)]"></h1>

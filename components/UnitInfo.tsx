@@ -24,12 +24,14 @@ const UnitInfo = ({ details, img }: { details: string; img: string }) => {
   }, []);
 
   return (
-    <div className="mt-24 flex justify-between px-32">
-      <div className=" flex flex-col items-start gap-10 overflow-hidden">
-        <h2 className="text-6xl text-[var(--theme-blue)] font-semibold text-start">
+    <div className="padding flex items-center lg:items-start justify-between flex-col-reverse lg:flex-row gap-12">
+      <div className=" flex flex-col items-center lg:items-start gap-10 overflow-hidden">
+        <h2 className="title text-[var(--theme-blue)] font-semibold text-start">
           Unit Detail
         </h2>
-        <p className="text-lg text-slate-500 max-w-xl">{details}</p>
+        <p className="text-lg text-slate-500 max-w-full lg:max-w-xl lg:text-start text-center">
+          {details}
+        </p>
         <div
           className="flex flex-nowrap pr-4 gap-4"
           style={{
@@ -38,52 +40,52 @@ const UnitInfo = ({ details, img }: { details: string; img: string }) => {
           }}
         >
           <div className="flex flex-col gap-3 min-w-full">
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <GiEuropeanFlag className="text-3xl text-[var(--theme-red)]" />
+            <h3 className="px-3 py-3 rounded-sm w-full flex items-center sm:gap-5 gap-2 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <GiEuropeanFlag className="sm:text-3xl text-2xl text-[var(--theme-red)]" />
               <span className="text-lg text-[var(--theme-red)]">
                 High-quality European finishes
               </span>
             </h3>
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <MdBalcony className="text-3xl text-[var(--theme-red)]" />
+            <h3 className="px-3 py-3 rounded-sm w-full flex items-center sm:gap-5 gap-2 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <MdBalcony className="sm:text-3xl text-2xl text-[var(--theme-red)]" />
               <span className="text-lg text-[var(--theme-red)]">
                 15 SQM terrace
               </span>
             </h3>
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <FaUtensils className="text-3xl text-[var(--theme-red)]" />
+            <h3 className="px-3 py-3 rounded-sm w-full flex items-center sm:gap-5 gap-2 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <FaUtensils className="sm:text-3xl text-2xl text-[var(--theme-red)]" />
               <span className="text-lg text-[var(--theme-red)]">
                 Modern, fully equipped kitchen
               </span>
             </h3>
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <FaCouch className="text-3xl text-[var(--theme-red)]" />
+            <h3 className="px-3 py-3 rounded-sm w-full flex items-center sm:gap-5 gap-2 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <FaCouch className="sm:text-3xl text-2xl text-[var(--theme-red)]" />
               <span className="text-lg text-[var(--theme-red)]">
                 Spacious living areas
               </span>
             </h3>
           </div>
           <div className="flex flex-col gap-3 min-w-full">
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <FaParking className="text-3xl text-[var(--theme-red)]" />
+            <h3 className="px-3 py-3 rounded-sm w-full flex items-center sm:gap-5 gap-2 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <FaParking className="sm:text-3xl text-2xl text-[var(--theme-red)]" />
               <span className="text-lg text-[var(--theme-red)]">
                 Parking space
               </span>
             </h3>
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <FaDumbbell className="text-3xl text-[var(--theme-red)]" />
+            <h3 className="px-3 py-3 rounded-sm w-full flex items-center sm:gap-5 gap-2 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <FaDumbbell className="sm:text-3xl text-2xl text-[var(--theme-red)]" />
               <span className="text-lg text-[var(--theme-red)]">
                 Gym and heated pool
               </span>
             </h3>
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <MdSecurity className="text-3xl text-[var(--theme-red)]" />
+            <h3 className="px-3 py-3 rounded-sm w-full flex items-center sm:gap-5 gap-2 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <MdSecurity className="sm:text-3xl text-2xl text-[var(--theme-red)]" />
               <span className="text-lg text-[var(--theme-red)]">
                 Advanced security features
               </span>
             </h3>
-            <h3 className="px-3 py-3 rounded-sm w-full flex items-center gap-5 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
-              <FaTree className="text-3xl text-[var(--theme-red)]" />
+            <h3 className="px-3 py-3 rounded-sm w-full flex items-center sm:gap-5 gap-2 bg-slate-200 border-2 border-[var(--theme-red)] hover:bg-slate-300 duration-300">
+              <FaTree className="sm:text-3xl text-2xl text-[var(--theme-red)]" />
               <span className="text-lg text-[var(--theme-red)]">
                 Roof-top terrace
               </span>
@@ -106,7 +108,7 @@ const UnitInfo = ({ details, img }: { details: string; img: string }) => {
           ></button>
         </div>
       </div>
-      <div className="pl-10 flex justify-center items-start">
+      <div className="lg:pl-10 pl-0 flex justify-center items-start">
         <Image
           src={img}
           alt="Unit Design"
