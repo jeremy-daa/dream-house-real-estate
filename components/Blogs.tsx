@@ -9,13 +9,11 @@ const Blogs = ({ blogs }: { blogs: any }) => {
   const [filteredBlogs, setFilteredBlogs] = React.useState(blogs);
 
   return (
-    <div className="mx-32">
-      <div className="center-ball mt-24  w-[350px] h-[2px] bg-[var(--theme-red)] relative mx-auto" />
+    <div className="padding">
+      <div className="center-ball  w-[350px] h-[2px] bg-[var(--theme-red)] relative mx-auto" />
       <div className="flex flex-col gap-10 justify-between items-center mt-10">
-        <h2 className="text-5xl font-semibold text-[var(--theme-red)]">
-          Updates
-        </h2>
-        <div className="relative w-[450px]">
+        <h2 className="title font-semibold text-[var(--theme-red)]">Updates</h2>
+        <div className="relative md:w-[450px] w-full">
           <input
             type="text"
             placeholder="Search Updates"

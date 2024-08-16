@@ -24,7 +24,7 @@ const Footer = () => {
   };
   return (
     <div className="flex flex-col">
-      <div className="lg:mx-24 md:mx-16 mx-6 px-6 bg-[var(--theme-red)] py-10 text-slate-100 flex flex-col gap-8 items-center rounded-lg translate-y-1/2 border-4 border-[var(--theme-blue)]">
+      <div className="lg:mx-24 md:mx-16 mx-6 px-6 bg-[var(--theme-red)] py-10 text-slate-100 flex flex-col md:gap-8 gap-4 items-center rounded-lg translate-y-1/2 border-4 border-[var(--theme-blue)]">
         <h2 className="title text-center">Ready to get started?</h2>
         <p className="subtitle max-w-2xl text-center">
           Contact us today and get a free consultation on how we can help you

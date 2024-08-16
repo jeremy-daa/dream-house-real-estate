@@ -3,15 +3,15 @@ import Image from "next/image";
 
 const PropertyInfo = () => {
   return (
-    <div className="mt-24 px-32 text-center">
-      <h2 className="uppercase text-xl text-[var(--theme-red)] font-semibold tracking-widest">
+    <div className="padding text-center">
+      <h2 className="uppercase subtitle text-[var(--theme-red)] font-semibold tracking-widest">
         Kebena District
       </h2>
-      <p className="capitalize text-5xl font-semibold text-[var(--theme-blue)] mt-5">
+      <p className="capitalize title font-semibold text-[var(--theme-blue)] mt-5">
         Property Details
       </p>
-      <div className="flex flex-col items-center justify-center w-full mt-16 gap-14">
-        <div className="flex gap-14 justify-center w-full">
+      <div className="flex flex-col items-center justify-center w-full md:mt-16 mt-8 md:gap-14 gap-5">
+        <div className="flex md:gap-14 gap-5 justify-center w-full flex-wrap">
           <div className="card w-[350px] h-[210px] select-none">
             <div className="card-inner">
               <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-color)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
@@ -79,7 +79,7 @@ const PropertyInfo = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-14 justify-center w-full">
+        <div className="flex md:gap-14 gap-5 justify-center w-full flex-wrap">
           <div className="card w-[350px] h-[210px] select-none">
             <div className="card-inner">
               <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-color)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">

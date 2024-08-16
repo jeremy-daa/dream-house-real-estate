@@ -5,7 +5,7 @@ const HomeInfo = () => {
   return (
     <div className="flex flex-col gap-16 padding">
       <div className="w-full flex flex-col items-center gap-8">
-        <h2 className="text-4xl text-[var(--theme-red)] font-semibold text-center">
+        <h2 className="xs:text-4xl text-3xl text-[var(--theme-red)] font-semibold text-center">
           Why Choose Us
         </h2>
         <p className="text-center text-lg text-slate-500 max-w-xl">

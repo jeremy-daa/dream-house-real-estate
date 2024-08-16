@@ -34,11 +34,11 @@ export default function GallerySlider({
     setIsViewerOpen(false);
   };
   return (
-    <div className="w-[80%] mx-auto">
-      <h2 className="uppercase text-xl text-[var(--theme-red)] font-semibold tracking-widest text-center mt-16">
+    <div className="padding">
+      <h2 className="uppercase subtitle text-[var(--theme-red)] font-semibold tracking-widest text-center mt-16">
         {title}
       </h2>
-      <p className="capitalize text-5xl font-semibold text-[var(--theme-blue)] mt-5 mb-10 text-center ">
+      <p className="capitalize title font-semibold text-[var(--theme-blue)] mt-5 mb-10 text-center ">
         {subtitle}
       </p>
       <Swiper
@@ -59,7 +59,7 @@ export default function GallerySlider({
         {slides.map((slide: Slide, i: any) => {
           return (
             <SwiperSlide key={i} onClick={() => openImageViewer(i)}>
-              <div className="w-[800px] h-[400px] mx-auto relative">
+              <div className="w-[800px] md:h-[400px] h-[500px] mx-auto relative">
                 <span className="absolute px-5 py-2 w-fit rounded-sm top-7 left-7 bg-[var(--theme-red)] text-lg text-slate-50">
                   {slide.tag}
                 </span>

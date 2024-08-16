@@ -1,25 +1,24 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const OurStory = () => {
   return (
-    <div className="mt-24 px-32 flex gap-24 justify-start">
-      <div className="min-w-[450px] max-w-[450px] h-[530px] border-[var(--theme-red)] border-[4px]">
+    <div className="padding flex xl:gap-24 gap-16 lg:items-start items-center justify-start flex-col lg:flex-row">
+      <div className="md:min-w-[450px] min-w-[90%] md:w-[450px] w-[90%] h-[600px] border-[var(--theme-red)] border-[4px]">
         <Image
-          src={"/design/building/2.jpg"}
+          src={"/design/building/6.jpg"}
           alt="our story"
           width={1000}
           height={1000}
-          className="min-w-[450px] h-[530px] object-center object-cover translate-x-6 translate-y-6"
+          className="w-full h-full object-center object-cover translate-x-6 translate-y-6"
         />
       </div>
-      <div className="flex flex-col justify-center gap-8">
-        <h2 className="uppercase text-xl text-[var(--theme-red)] font-semibold tracking-widest">
+      <div className="flex flex-col justify-center lg:items-start items-center lg:text-start text-center gap-8">
+        <h2 className="uppercase subtitle text-[var(--theme-red)] font-semibold tracking-widest">
           who we are
         </h2>
-        <p className="capitalize text-5xl font-semibold text-[var(--theme-blue)]">
+        <p className="capitalize lg:leading-tight leading-snug title font-semibold text-[var(--theme-blue)]">
           Building Dreams, Creating Communities
         </p>
         <p className="text-lg text-slate-500">

@@ -6,7 +6,7 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <PageHero title="Gallery" img="/page_hero.png" />
+      <PageHero title="Gallery" />
       <GallerySlider
         title={"Building Design"}
         interval={4000}
@@ -36,11 +36,11 @@ const page = () => {
       />
 
       <Br />
-      <div className="flex flex-col items-center w-full">
-        <h2 className="uppercase text-xl text-[var(--theme-red)] font-semibold tracking-widest text-center">
+      <div className="flex flex-col items-center w-full padding">
+        <h2 className="uppercase subtitle text-[var(--theme-red)] font-semibold tracking-widest text-center">
           Architectural Walkthrough
         </h2>
-        <p className="capitalize text-5xl font-semibold text-[var(--theme-blue)] mt-5 mb-10 text-center ">
+        <p className="capitalize title font-semibold text-[var(--theme-blue)] mt-5 mb-10 text-center ">
           A 3D Walkthrough of the Building
         </p>
         <video

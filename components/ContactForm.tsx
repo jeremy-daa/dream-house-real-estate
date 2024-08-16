@@ -65,12 +65,12 @@ const ContactForm = () => {
     }
   };
   return (
-    <div className="w-[80%] mx-auto mt-10 rounded-lg flex shadowContact p-4">
-      <div className="flex-[0.40] rounded-lg bg-[var(--card-color)] p-8 text-slate-400 flex flex-col gap-16 relative overflow-hidden">
+    <div className="xl:w-[80%] w-full mx-auto mt-10 rounded-lg flex lg:flex-row flex-col shadowContact p-4">
+      <div className="flex-[0.40] rounded-lg bg-[var(--card-color)] md:p-8 p-5 text-slate-400 flex flex-col gap-16 relative overflow-hidden">
         <div className="circleBG bottom-0 h-52 w-52 right-0 translate-x-1/3 translate-y-1/3 z-0">
           <div className="circleBG top-0 h-32 w-32 left-0 -translate-x-1/3 -translate-y-1/3 z-0"></div>
         </div>
-        <div className="flex flex-col gap-20">
+        <div className="flex flex-col md:gap-20 gap-10">
           <div className="flex flex-col gap-3">
             <h2 className="text-2xl font-semibold text-slate-50">
               Contact Information
@@ -82,25 +82,31 @@ const ContactForm = () => {
           <div className="flex flex-col gap-7 z-10">
             <Link
               href={"https://maps.app.goo.gl/DvxKongncwBCV6xR9"}
-              className="flex items-center gap-5"
+              className="flex items-center md:gap-5 gap-3"
             >
-              <span className="p-2 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit">
+              <span className="md:p-2 p-1 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit">
                 <IoLocationOutline className="text-xl" />
               </span>
               <span className="text-slate-400 tracking-widest hover:text-[var(--theme-red)] duration-300 cursor-pointer text-lg">
                 Addis Ababa, Ethiopia
               </span>
             </Link>
-            <Link href="tel:+251962944444" className="flex items-center gap-5">
-              <span className="p-2 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit">
+            <Link
+              href="tel:+251962944444"
+              className="flex items-center md:gap-5 gap-3"
+            >
+              <span className="md:p-2 p-1 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit">
                 <MdOutlinePhone className="text-xl" />
               </span>
               <span className="text-slate-400 tracking-widest hover:text-[var(--theme-red)] duration-300 cursor-pointer text-lg">
                 +251 962 944444
               </span>
             </Link>
-            <Link href="tel:+251935575700" className="flex items-center gap-5">
-              <span className="p-2 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit">
+            <Link
+              href="tel:+251935575700"
+              className="flex items-center md:gap-5 gap-3"
+            >
+              <span className="md:p-2 p-1 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit">
                 <MdOutlinePhone className="text-xl" />
               </span>
               <span className="text-slate-400 tracking-widest hover:text-[var(--theme-red)] duration-300 cursor-pointer text-lg">
@@ -109,12 +115,12 @@ const ContactForm = () => {
             </Link>
             <Link
               href="mailto:info@dreamhouse-et.com"
-              className="flex items-center gap-5"
+              className="flex items-center md:gap-5 gap-3"
             >
-              <span className="p-2 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit">
+              <span className="md:p-2 p-1 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit">
                 <MdOutlineMail className="text-xl" />
               </span>
-              <span className="text-slate-400 tracking-widest hover:text-[var(--theme-red)] duration-300 cursor-pointer text-lg">
+              <span className="text-slate-400 tracking-widest hover:text-[var(--theme-red)] duration-300 cursor-pointer text-lg whitespace-nowrap">
                 info@dreamhouse-et.com
               </span>
             </Link>
@@ -150,7 +156,7 @@ const ContactForm = () => {
         </div>
       </div>
       <div className="flex-[0.6]">
-        <form className="flex flex-col gap-5 p-8 rounded-lg text-slate-400">
+        <form className="flex flex-col gap-5 md:p-8 p-3 rounded-lg text-slate-400">
           <h2 className="text-2xl font-semibold text-slate-900">
             Send Us a Message
           </h2>
@@ -164,7 +170,7 @@ const ContactForm = () => {
             </p>
           )}
           <div className="flex flex-col gap-4">
-            <div className="flex gap-5 w-full">
+            <div className="flex gap-5 w-full md:flex-row flex-col">
               <div className="flex flex-col gap-2 w-full">
                 <label htmlFor="name">Name</label>
                 <input
@@ -188,7 +194,7 @@ const ContactForm = () => {
                 />
               </div>
             </div>
-            <div className="flex gap-5">
+            <div className="flex gap-5 md:flex-row flex-col">
               <div className="flex flex-col gap-2 w-full">
                 <label htmlFor="phone">Phone</label>
                 <input

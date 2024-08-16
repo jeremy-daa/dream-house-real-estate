@@ -51,7 +51,7 @@
 }
 
 .title {
-  @apply md:text-5xl text-4xl
+  @apply md:text-5xl xs:text-4xl text-3xl
 }
 
 .subtitle {
