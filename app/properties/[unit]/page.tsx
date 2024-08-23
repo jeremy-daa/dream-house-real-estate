@@ -24,7 +24,11 @@ const page = ({ params: { unit } }: Params) => {
         slides: [
           {
             image: "/design/units/1.jpg",
-            tag: "Appartment Unit",
+            tag: "Living Room",
+          },
+          {
+            image: "/design/units/3.jpg",
+            tag: "Bed Room",
           },
           {
             image: "/design/plans/2-bed.jpg",
@@ -49,7 +53,11 @@ const page = ({ params: { unit } }: Params) => {
         slides: [
           {
             image: "/design/units/2.jpg",
-            tag: "Appartment Unit",
+            tag: "Living Room",
+          },
+          {
+            image: "/design/units/4.jpg",
+            tag: "Bed Room",
           },
           {
             image: "/design/plans/3-bed.jpg",

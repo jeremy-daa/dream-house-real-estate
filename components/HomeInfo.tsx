@@ -96,6 +96,28 @@ const HomeInfo = () => {
             </div>
           </div>
         </div>
+        <div className="card w-[350px] h-[210px] select-none">
+          <div className="card-inner">
+            <div className="card-front flex flex-col items-center justify-evenly gap-6 bg-[var(--card-color)] border-[var(--theme-red)] px-5 py-7 rounded-sm  border-[4px]">
+              <Image
+                src="/vectors/construction.svg"
+                alt="Construction"
+                width={60}
+                height={60}
+              />
+              <span className="text-lg text-center text-[var(--theme-red)] font-semibold">
+                High-Quality Construction
+              </span>
+            </div>
+            <div className="card-back bg-[var(--theme-red)] border-[var(--theme-blue)] px-5 py-7 rounded-sm  border-[4px] flex items-center justify-center">
+              <p className="text-center text-[var(--theme-blue)]">
+                Our properties are built with high-quality materials and
+                craftsmanship, ensuring durability and value retention for years
+                to come.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

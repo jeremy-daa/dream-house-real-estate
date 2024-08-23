@@ -65,7 +65,7 @@ const HomeProperties = () => {
                 <span className="font-semibold text-[var(--theme-red)] flex items-center  gap-3 border-[var(--theme-red)] border-[2px] px-3 py-1 sm:text-base text-sm rounded-3xl">
                   <FiMapPin /> Location :
                 </span>{" "}
-                Lebu, Addis Ababa
+                Kebena, Addis Ababa
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ const HomeProperties = () => {
                 <span className="font-semibold text-[var(--theme-red)] flex items-center  gap-3 border-[var(--theme-red)] border-[2px] px-3 py-1 sm:text-base text-sm rounded-3xl">
                   <FiMapPin /> Location :
                 </span>{" "}
-                Lebu, Addis Ababa
+                Kebena, Addis Ababa
               </div>
             </div>
           </div>
