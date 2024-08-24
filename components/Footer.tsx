@@ -65,7 +65,7 @@ const Footer = () => {
               <FaFacebookF className="text-2xl" />
             </Link>
             <Link
-              href={"https://wa.me/+251935575700"}
+              href={"https://wa.me/+251935575744"}
               className="p-2 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit border-2 border-transparent hover:bg-[--theme-blue] hover:border-[var(--theme-red)] duration-300 scale-90 glow"
             >
               <IoLogoWhatsapp className="text-3xl" />
@@ -142,12 +142,12 @@ const Footer = () => {
                 +251 962 944444
               </span>
             </Link>
-            <Link href="tel:+251935575700" className="flex items-center gap-2">
+            <Link href="tel:+251935575744" className="flex items-center gap-2">
               <span className="p-2 rounded-full text-sm flex gap-2 items-center bg-[var(--theme-red)] text-slate-100 w-fit">
                 <MdOutlinePhone className="text-xl" />
               </span>
               <span className="text-slate-400 tracking-widest hover:text-[var(--theme-red)] duration-300 cursor-pointer">
-                +251 935 575700
+                +251 935 575744
               </span>
             </Link>
             <Link
