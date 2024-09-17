@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title:
     "Dream House Real Estate | Your Trusted Partner in Developing Perfect Homes in Addis Ababa",
   description:
-    "Dream House Real Estate is a real estate company in Addis Ababa, Ethiopia. We provide services in property development, property management, and real estate consultancy. Our services are tailored to meet the needs of our clients. We are committed to delivering quality services and building long-term relationships with our clients. Contact us today for all your real estate needs.",
+    "Dream House Real Estate, based in Addis Ababa, specializes in luxury property development. We deliver high-quality, innovative real estate solutions tailored to our clients' needs. Contact us for exceptional service and prime investment opportunities in Ethiopia's top locations.",
 };
 
 export default function RootLayout({
